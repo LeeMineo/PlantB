@@ -1,0 +1,25 @@
+/* src/css/Separator.css */
+.separator {
+    height: 20vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), #1b1b1b 50%, #1b1b1b);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: 'Pretendard Variable', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .separator-text {
+    margin: 0;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+  }
+  
+  .separator-text.visible {
+    opacity: 1;
+  }
+  
