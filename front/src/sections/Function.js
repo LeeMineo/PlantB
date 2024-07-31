@@ -30,7 +30,7 @@ const FunctionSection = () => {
   }, []);
 
   return (
-    <div className="function-section">
+    <div id="function" className="function-section">
       {functionData.map((item, index) => (
         <div
           key={index}
