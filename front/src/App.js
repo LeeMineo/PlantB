@@ -1,15 +1,24 @@
 // src/App.js
 import React from 'react';
 import './App.css';
+import Header from './components/Header';
+import Main from './sections/Main';
+import Function from './sections/Function';
+import Data from './sections/Data';
+import Tech from './sections/Tech';
+import Value from './sections/Value';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to My Simple React Page</h1>
-        <p>This is a simple page deployed on Vercel.</p>
-        <p>어때 표시되지??.</p>
-      </header>
+      <Header />
+      <Main />
+      <Function />
+      <Data />
+      <Tech />
+      <Value />
+      <Footer />
     </div>
   );
 }

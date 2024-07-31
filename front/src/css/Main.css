@@ -1,0 +1,60 @@
+/* src/css/Main.css */
+.main-section {
+  position: relative;
+  height: 100vh;
+  background: url('../../public/background.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: flex-start;
+  color: white;
+  text-align: left;
+  font-family: 'Pretendard Variable', sans-serif;
+  padding-top: 3%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 60%, rgba(0, 0, 0, 0.8));
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content {
+  z-index: 2;
+  margin-left: 10%;
+  transform: translateY(-20%);
+}
+
+.tagline {
+  font-size: 1vw;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: #FFD700;
+}
+
+.title {
+  font-size: 7vw;
+  font-weight: 500;
+  color: white;
+  margin: 0; /* Reset margin to 0 */
+}
+
+.title .highlight {
+  color: #FFD700;
+}
+
+.description {
+  font-size: 2vw;
+  font-weight: 350;
+  margin-top: 10px; /* Add some margin-top */
+}
+
+.scroll-down p {
+  font-size: 1vw;
+  font-weight: 300;
+  margin-top: 30%; /* Add some margin-top */
+}
