@@ -2,7 +2,7 @@
 .main-section {
   position: relative;
   height: 100vh;
-  background: url('../../public/background.jpg') no-repeat center center/cover;
+  background: url('../../public/back.png') no-repeat center center/cover;
   display: flex;
   align-items: flex-start;
   color: white;
@@ -17,7 +17,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent 60%, rgba(0, 0, 0, 0.8));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent 60%, rgba(0, 0, 0, 0.9));
   display: flex;
   align-items: center;
   justify-content: flex-start;
