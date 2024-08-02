@@ -81,7 +81,7 @@ const Tech = () => {
         </div>
 
         <p className={`tech-description ${serviceInView ? 'fade-in' : ''}`} ref={serviceRef}>
-        서비스 8월 중 웹앱으로 출시예정. 웹앱으로 먼저 출시 후 차후 어플로 출시할 계획.
+        서비스 8월 중 웹앱으로 출시예정. 웹앱 출시 후 차후 어플 출시.
         </p>
 
         <div className="tech-subsection">
