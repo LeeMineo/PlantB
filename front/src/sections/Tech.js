@@ -49,11 +49,39 @@ const Tech = () => {
   const { ref: techRef, inView: techInView } = useInView({ triggerOnce: true });
 
   return (
-    <section id = "tech" className="tech-section">
+    <section id="tech" className="tech-section">
       <h2 className="tech-title">플랜트비는 최신 기술을 활용하여 사용자에게 최고의 경험을 제공합니다.</h2>
       <div className="tech-details">
         <p className={`tech-description ${serviceInView ? 'fade-in' : ''}`} ref={serviceRef}>
-          플랜트비는 등산과 식물 탐방을 결합한 서비스로, 사용자에게 다양한 기능과 정보를 제공합니다. 현재 UI/UX 기획은 완료된 상태이며, 프론트엔드 개발은 80%, 백엔드 개발은 50% 진행된 상태입니다. 서비스는 8월 중 웹앱으로 출시될 예정입니다. 웹앱으로 먼저 출시 후 반응이 좋고 사용자가 많으면 차후 어플로 출시할 계획에 있습니다.
+        플랜트비의 개발 진행 상태
+        </p>
+        
+        <div className="progress-bars">
+          <div className="progress-bar">
+            <div className="progress-bar-title">UI/UX 기획</div>
+            <div className="progress">
+              <div className="progress-done" style={{ width: '100%' }}></div>
+            </div>
+            <div className="progress-percentage">100%</div>
+          </div>
+          <div className="progress-bar">
+            <div className="progress-bar-title">프론트엔드 개발</div>
+            <div className="progress">
+              <div className="progress-done" style={{ width: '80%' }}></div>
+            </div>
+            <div className="progress-percentage">80%</div>
+          </div>
+          <div className="progress-bar">
+            <div className="progress-bar-title">백엔드 개발</div>
+            <div className="progress">
+              <div className="progress-done" style={{ width: '50%' }}></div>
+            </div>
+            <div className="progress-percentage">50%</div>
+          </div>
+        </div>
+
+        <p className={`tech-description ${serviceInView ? 'fade-in' : ''}`} ref={serviceRef}>
+        서비스 8월 중 웹앱으로 출시예정. 웹앱으로 먼저 출시 후 차후 어플로 출시할 계획.
         </p>
 
         <div className="tech-subsection">

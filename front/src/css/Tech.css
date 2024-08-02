@@ -1,140 +1,185 @@
 /* src/css/TechSection.css */
 .tech-section {
-    padding: 100px 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-  }
-  
-  .tech-title {
-    font-family: 'Pretendard Variable', sans-serif;
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 30px;
-    animation: fade-in 1.2s ease-in-out;
-  }
-  
-  .tech-details {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: left;
-  }
-  
-  .tech-description {
-    font-family: 'Pretendard Variable', sans-serif;
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 20px;
+  padding: 100px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.tech-title {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+  animation: fade-in 1.2s ease-in-out;
+}
+
+.tech-details {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.tech-description {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.tech-description.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.progress-bars {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.progress-bar {
+  width: 80%;
+  max-width: 600px;
+  background-color: #ddd;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-bar-title {
+  font-size: 1em;
+  font-weight: bold;
+  flex: 1;
+}
+
+.progress {
+  flex: 3;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.progress-done {
+  background-color: #4CAF50;
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+.progress-percentage {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.tech-subsection {
+  margin-bottom: 50px;
+}
+
+.tech-subtitle {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 2em;
+  color: #4CAF50;
+  margin-bottom: 20px;
+  animation: fade-in 1.2s ease-in-out;
+}
+
+.tech-subsection ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.tech-item img {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.tech-item div {
+  flex: 1;
+}
+
+.tech-item strong {
+  display: block;
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 1.2em;
+  color: #4CAF50;
+  margin-bottom: 5px;
+}
+
+.tech-item p {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 1em;
+  color: #666;
+  margin: 0;
+}
+
+.tech-item.slide-in-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.tech-item.slide-in-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes fade-in {
+  from {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   }
-  
-  .tech-description.fade-in {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
-  
-  .tech-subsection {
-    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .tech-section {
+    padding: 50px 10px;
   }
-  
-  .tech-subtitle {
-    font-family: 'Pretendard Variable', sans-serif;
+
+  .tech-title {
     font-size: 2em;
-    color: #4CAF50;
-    margin-bottom: 20px;
-    animation: fade-in 1.2s ease-in-out;
   }
-  
-  .tech-subsection ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .tech-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #fff;
-    opacity: 0;
-    transform: translateX(-20px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-  }
-  
-  .tech-item img {
-    width: 80px;
-    height: 80px;
-    margin-right: 15px;
-    border-radius: 50%;
-  }
-  
-  .tech-item div {
-    flex: 1;
-  }
-  
-  .tech-item strong {
-    display: block;
-    font-family: 'Pretendard Variable', sans-serif;
-    font-size: 1.2em;
-    color: #4CAF50;
-    margin-bottom: 5px;
-  }
-  
-  .tech-item p {
-    font-family: 'Pretendard Variable', sans-serif;
+
+  .tech-description {
     font-size: 1em;
-    color: #666;
-    margin: 0;
   }
-  
-  .tech-item.slide-in-left {
-    opacity: 1;
-    transform: translateX(0);
+
+  .tech-subtitle {
+    font-size: 1.5em;
   }
-  
-  .tech-item.slide-in-right {
-    opacity: 1;
-    transform: translateX(0);
+
+  .tech-item {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+
+  .tech-item img {
+    margin-bottom: 10px;
   }
-  
-  @media (max-width: 768px) {
-    .tech-section {
-      padding: 50px 10px;
-    }
-  
-    .tech-title {
-      font-size: 2em;
-    }
-  
-    .tech-description {
-      font-size: 1em;
-    }
-  
-    .tech-subtitle {
-      font-size: 1.5em;
-    }
-  
-    .tech-item {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .tech-item img {
-      margin-bottom: 10px;
-    }
-  }
-  
+}
