@@ -1,0 +1,103 @@
+.data-section {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+    font-family: 'Pretendard Variable', sans-serif;
+    position: relative;
+  }
+  
+  .data-title {
+    font-size: 2em;
+    margin-bottom: 120px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .data-title.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .data-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .data-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.1;
+    overflow: hidden;
+  }
+  
+  .data-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .data-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .data-card {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out, box-shadow 0.3s, transform 0.3s ease;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .data-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .data-card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .data-card-description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .data-card a {
+    font-size: 1em;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .data-card a:hover {
+    text-decoration: underline;
+  }
+  
