@@ -56,7 +56,7 @@ const DataSection = () => {
             ))}
           </div>
         </div>
-        <div className="overlay-data 2"></div>
+        <div className="overlay-data2"></div>
       </section>
       <div className="gradient-section2"></div>
     </>
