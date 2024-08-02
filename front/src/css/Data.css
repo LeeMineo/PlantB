@@ -1,10 +1,32 @@
+/* src/css/DataSection.css */
 .data-section {
-    background-color: #1b1b1b;
+    background: url('../assets/dataimg.png') no-repeat center center/cover;
     color: white;
-    padding: 150px 0;
+    padding: 50px 0;
     text-align: center;
     font-family: 'Pretendard Variable', sans-serif;
+    font-weight: 500;
     position: relative;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent 100%, rgba(0, 0, 0, 1));
+    z-index: 1;
+  }
+  .overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent 100%, rgba(0, 0, 0, 1));
+    z-index: 1;
   }
   
   .data-title {
@@ -13,6 +35,8 @@
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
+    position: relative;
+    z-index: 2; /* 타이틀이 최상단에 위치하도록 설정 */
   }
   
   .data-title.visible {
@@ -27,23 +51,7 @@
     align-items: center;
     position: relative;
     padding: 20px;
-  }
-  
-  .data-image {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.1;
-    overflow: hidden;
-  }
-  
-  .data-image img {
-    width: 100%;
-    height: auto;
+    z-index: 2;
   }
   
   .data-cards {
@@ -52,11 +60,10 @@
     justify-content: center;
     gap: 30px;
     z-index: 2;
-    position: relative;
   }
   
   .data-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.9); /* 반투명 배경 */
     color: #333;
     padding: 20px;
     border-radius: 8px;
@@ -99,5 +106,19 @@
   
   .data-card a:hover {
     text-decoration: underline;
+  }
+
+  .gradient-section {
+    height: 200px; /* 필요에 따라 높이를 조정하세요 */
+    background: linear-gradient(to bottom, #1B1B1B, #000101);
+    position: relative;
+    z-index: 1;
+  }
+
+  .gradient-section2 {
+    height: 100px; /* 필요에 따라 높이를 조정하세요 */
+    background: linear-gradient(to bottom, #000101, #1B1B1B);
+    position: relative;
+    z-index: 1;
   }
   

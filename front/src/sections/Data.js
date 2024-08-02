@@ -1,7 +1,7 @@
+// src/sections/DataSection.js
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import '../css/Data.css';
-import dataImg from '../assets/dataimg.png'; // 이미지 경로 수정
 
 const dataDetails = [
   {
@@ -27,7 +27,7 @@ const dataDetails = [
   {
     title: "식물데이터 API",
     description: "다양한 식물에 대한 종합적인 데이터를 제공하여 사용자가 식물을 쉽게 식별하고 정보를 얻을 수 있도록 합니다.",
-    link: "https://www.nie-ecobank.kr/data/api/introduceOpenApi.do",
+    link: "https://www.nie-ecobank.kr/cmmn/Index.do?",
   },
   {
     title: "식물 분석 API",
@@ -36,28 +36,31 @@ const dataDetails = [
   },
 ];
 
-const Data = () => {
+const DataSection = () => {
   const { ref: dataRef, inView: dataVisible } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section id = "data" className="data-section">
-      <h2 className={`data-title ${dataVisible ? 'visible' : ''}`}>플랜트비는 신뢰할 수 있는 데이터를 활용합니다.</h2>
-      <div className="data-content" ref={dataRef}>
-        <div className="data-image">
-          <img src={dataImg} alt="데이터 이미지" />
+    <>
+      <div className="gradient-section"></div>
+      <section id="data" className="data-section">
+        <div className="overlay"></div>
+        <h2 className={`data-title ${dataVisible ? 'visible' : ''}`}>플랜트비는 신뢰할 수 있는 데이터를 활용합니다.</h2>
+        <div className="data-content" ref={dataRef}>
+          <div className="data-cards">
+            {dataDetails.map((data, index) => (
+              <div key={index} className={`data-card ${dataVisible ? 'visible' : ''}`}>
+                <h3 className="data-card-title">{data.title}</h3>
+                <p className="data-card-description">{data.description}</p>
+                <a href={data.link} target="_blank" rel="noopener noreferrer">더 알아보기</a>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="data-cards">
-          {dataDetails.map((data, index) => (
-            <div key={index} className={`data-card ${dataVisible ? 'visible' : ''}`}>
-              <h3 className="data-card-title">{data.title}</h3>
-              <p className="data-card-description">{data.description}</p>
-              <a href={data.link} target="_blank" rel="noopener noreferrer">더 알아보기</a>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+        <div className="overlay2"></div>
+      </section>
+      <div className="gradient-section2"></div>
+    </>
   );
 }
 
-export default Data;
+export default DataSection;
