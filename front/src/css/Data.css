@@ -10,7 +10,7 @@
     overflow: hidden;
   }
   
-  .overlay {
+  .overlay-data {
     position: absolute;
     top: 0;
     left: 0;
@@ -19,7 +19,7 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent 100%, rgba(0, 0, 0, 1));
     z-index: 1;
   }
-  .overlay2 {
+  .overlay-data2 {
     position: absolute;
     top: 0;
     left: 0;

@@ -43,7 +43,7 @@ const DataSection = () => {
     <>
       <div className="gradient-section"></div>
       <section id="data" className="data-section">
-        <div className="overlay"></div>
+        <div className="overlay-data"></div>
         <h2 className={`data-title ${dataVisible ? 'visible' : ''}`}>플랜트비는 신뢰할 수 있는 데이터를 활용합니다.</h2>
         <div className="data-content" ref={dataRef}>
           <div className="data-cards">
@@ -56,7 +56,7 @@ const DataSection = () => {
             ))}
           </div>
         </div>
-        <div className="overlay2"></div>
+        <div className="overlay-data 2"></div>
       </section>
       <div className="gradient-section2"></div>
     </>
