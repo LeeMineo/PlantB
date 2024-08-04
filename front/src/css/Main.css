@@ -33,22 +33,22 @@
   font-size: 1vw;
   font-weight: 400;
   letter-spacing: 0.2em;
-  color: #F1C734;
+  color: #FFD700;
 }
 
 .title {
-  font-size: 7vw;
+  font-size: 6vw;
   font-weight: 500;
   color: white;
   margin: 0; /* Reset margin to 0 */
 }
 
 .title .highlight {
-  color: #F1C734;
+  color: #FFD700;
 }
 
 .description {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 350;
   margin-top: 10px; /* Add some margin-top */
 }
