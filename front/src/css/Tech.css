@@ -10,7 +10,6 @@
   font-size: 2em;
   color: white;
   margin-bottom: 10%;
-  animation: fade-in 1.2s ease-in-out;
 }
 
 .tech-details {
@@ -24,14 +23,6 @@
   font-size: 1em;
   color: #666;
   margin-bottom: 20px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-}
-
-.tech-description.fade-in {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .progress-bars {
@@ -59,38 +50,16 @@
   flex: 1;
 }
 
-.progress {
-  flex: 3;
-  height: 20px;
-  background-color: #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 0 10px;
-}
-
-.progress-done {
-  background-color: #4CAF50;
-  height: 100%;
-  border-radius: 10px;
-  transition: width 1s ease-in-out;
-}
-
-.progress-percentage {
-  font-size: 1em;
-  font-weight: bold;
-}
-
 .tech-subsection {
   margin-bottom: 50px;
 }
 
 .tech-subtitle {
   font-family: 'Pretendard Variable', sans-serif;
-  font-size: 2em;
-  font-weight:350;
+  font-size: 1.5em;
+  font-weight:500;
   color: #FFD700;
   margin-bottom: 20px;
-  animation: fade-in 1.2s ease-in-out;
 }
 
 .tech-subsection ul {
@@ -106,9 +75,6 @@
   padding: 20px;
   border-radius: 8px;
   background-color: #fff;
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .tech-item img {
@@ -136,27 +102,6 @@
   font-size: 1em;
   color: #666;
   margin: 0;
-}
-
-.tech-item.slide-in-left {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.tech-item.slide-in-right {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media (max-width: 768px) {

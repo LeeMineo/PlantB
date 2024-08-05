@@ -1,4 +1,3 @@
-// src/sections/TechSection.js
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import '../css/Tech.css';
@@ -45,46 +44,18 @@ const coreTechnologies = [
 ];
 
 const Tech = () => {
-  const { ref: serviceRef, inView: serviceInView } = useInView({ triggerOnce: true });
-  const { ref: techRef, inView: techInView } = useInView({ triggerOnce: true });
+  const { ref: serviceRef, inView: serviceInView } = useInView({ triggerOnce: true, threshold: 0.1 });
+  const { ref: techRef, inView: techInView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
     <section id="tech" className="tech-section">
       <h2 className="tech-title">플랜트비는 최신 기술을 활용하여 사용자에게 최고의 경험을 제공합니다.</h2>
       <div className="tech-details">
-        {/* <p className={`tech-description ${serviceInView ? 'fade-in' : ''}`} ref={serviceRef}>
-        플랜트비의 개발 진행 상태
-        </p>
-         */}
-        {/* <div className="progress-bars">
-          <div className="progress-bar">
-            <div className="progress-bar-title">UI/UX 기획</div>
-            <div className="progress">
-              <div className="progress-done" style={{ width: '100%' }}></div>
-            </div>
-            <div className="progress-percentage">100%</div>
-          </div>
-          <div className="progress-bar">
-            <div className="progress-bar-title">프론트엔드 개발</div>
-            <div className="progress">
-              <div className="progress-done" style={{ width: '80%' }}></div>
-            </div>
-            <div className="progress-percentage">80%</div>
-          </div>
-          <div className="progress-bar">
-            <div className="progress-bar-title">백엔드 개발</div>
-            <div className="progress">
-              <div className="progress-done" style={{ width: '50%' }}></div>
-            </div>
-            <div className="progress-percentage">50%</div>
-          </div>
-        </div> */}
-
         <div className="tech-subsection">
           <h3 className="tech-subtitle">서비스 구성</h3>
           <ul>
             {techDetails.map((detail, index) => (
-              <li key={index} className={`tech-item ${serviceInView ? 'slide-in-left' : ''}`}>
+              <li key={index} className={`tech-item ${serviceInView ? '' : ''}`} ref={serviceRef}>
                 <div>
                   <strong>{detail.title}:</strong>
                   <p>{detail.description}</p>
@@ -98,7 +69,7 @@ const Tech = () => {
           <h3 className="tech-subtitle">핵심기술</h3>
           <ul>
             {coreTechnologies.map((tech, index) => (
-              <li key={index} className={`tech-item ${techInView ? 'slide-in-right' : ''}`} ref={techRef}>
+              <li key={index} className={`tech-item ${techInView ? '' : ''}`} ref={techRef}>
                 <div>
                   <strong>{tech.title}:</strong>
                   <p>{tech.description}</p>
@@ -107,8 +78,8 @@ const Tech = () => {
             ))}
           </ul>
         </div>
-        <p className={`tech-description ${serviceInView ? 'fade-in' : ''}`} ref={serviceRef}>
-        *8월 중 웹앱으로 출시예정. 웹앱 출시 후 차후 어플 출시.
+        <p className={`tech-description ${serviceInView ? '' : ''}`} ref={serviceRef}>
+          *8월 중 웹앱으로 출시예정. 웹앱 출시 후 차후 어플 출시.
         </p>
       </div>
     </section>
