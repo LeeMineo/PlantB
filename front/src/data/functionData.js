@@ -5,7 +5,7 @@ const functionData = [
       subtitle: 'FUNCTION 1',
       title: '등산로별 식물 정보',
       description: '등산로마다 자주 볼 수 있는 식물들의 사진과 설명을 제공합니다.',
-      image: '/image/plantb_3.png', // 이미지 경로 수정 필요
+      image: '/image/plantb_6.png', // 이미지 경로 수정 필요
     },
     {
       number: '02',
