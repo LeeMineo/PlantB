@@ -19,7 +19,7 @@ const functionData = [
       subtitle: 'FUNCTION 3',
       title: '등산로 추천',
       description: '사용자의 행동 패턴을 분석하여, 다음에 도전할 만한 등산로를 추천합니다.',
-      image: '/image/plantb_2.png', // 이미지 경로 수정 필요
+      image: '/image/plantb_4.png', // 이미지 경로 수정 필요
     },
     {
       number: '04',
@@ -33,7 +33,7 @@ const functionData = [
       subtitle: 'FUNCTION 5',
       title: '주의사항 및 안내 제공',
       description: '등산로별 주의 사항과 안내사항을 제공합니다.',
-      image: '/image/plantb_1.png', // 이미지 경로 수정 필요
+      image: '/image/plantb_2.png', // 이미지 경로 수정 필요
     },
   ];
   
