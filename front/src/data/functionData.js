@@ -5,14 +5,14 @@ const functionData = [
       subtitle: 'FUNCTION 1',
       title: '등산로별 식물 정보',
       description: '등산로마다 자주 볼 수 있는 식물들의 사진과 설명을 제공합니다.',
-      image: '/image/plantb_1.png', // 이미지 경로 수정 필요
+      image: '/image/plantb_3.png', // 이미지 경로 수정 필요
     },
     {
       number: '02',
       subtitle: 'FUNCTION 2',
       title: '사용자 식물 도감',
       description: '사용자가 등산 중 촬영한 식물을 앱에 업로드하면, AI가 자동으로 인식하여 식물 도감에 추가됩니다.',
-      image: '/image/plantb_3.png', // 이미지 경로 수정 필요
+      image: '/image/plantb_5.png', // 이미지 경로 수정 필요
     },
     {
       number: '03',
