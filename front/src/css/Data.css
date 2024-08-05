@@ -63,7 +63,7 @@
   }
   
   .data-card {
-    background: rgba(255, 255, 255, 0.9); /* 반투명 배경 */
+    background: rgba(255, 255, 255, 1); /* 반투명 배경 */
     color: #333;
     padding: 20px;
     border-radius: 8px;
@@ -99,9 +99,9 @@
   
   .data-card a {
     font-size: 1em;
-    color: #F1C734;
+    color: #FFD700;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
   }
   
   .data-card a:hover {
