@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import '../css/Function.css';
 import functionData from '../data/functionData';
+import Tagline from '../assets/svg/Tagline.svg';
 
 const FunctionSection = () => {
   const [currentFunction, setCurrentFunction] = useState(1);
@@ -37,13 +38,13 @@ const FunctionSection = () => {
           id={`function-${index + 1}`}
           className={`function-item ${currentFunction === index + 1 ? 'active' : ''}`}
         >
+          <div className="function-number">{item.number}</div>
           <div className="function-text">
-            <h1 className="function-number">{item.number}</h1>
-            <h2 className="function-title">
+            <div className="function-title">
+              <img src={Tagline} alt="Tagline" className="tagline" />
               <span className="function-subtitle">{item.subtitle}</span>
-              <br />
-              {item.title}
-            </h2>
+            </div>
+            <h2 className="function-main-title">{item.title}</h2>
             <p className="function-description">{item.description}</p>
             <p className="read-more">read more →</p>
           </div>

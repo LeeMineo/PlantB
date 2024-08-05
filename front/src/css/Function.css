@@ -1,83 +1,108 @@
 /* src/css/Function.css */
 .function-section {
-    position: relative;
-    padding: 20px;
-    background-color: #1b1b1b;
-    color: white;
-    font-family: 'Pretendard Variable', sans-serif;
-  }
-  
-  .function-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 0;
-    opacity: 0.5;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .function-item.active {
-    opacity: 1;
-  }
-  
-  .function-text {
-    width: 50%;
-  }
-  
-  .function-number {
-    font-size: 5vw;
-    color: rgba(255, 215, 0, 0.5);
-  }
-  
-  .function-title {
-    font-size: 3vw;
-  }
-  
-  .function-subtitle {
-    color: rgba(255, 215, 0, 1);
-  }
-  
-  .function-description {
-    font-size: 1.5vw;
-    margin: 20px 0;
-  }
-  
-  .read-more {
-    font-size: 1vw;
-    color: rgba(255, 215, 0, 1);
-    cursor: pointer;
-  }
-  
-  .function-image {
-    width: 40%;
-  }
-  
-  .function-image img {
-    width: 100%;
-  }
-  
-  .function-navigation {
-    position: fixed;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .nav-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5vw;
-    cursor: pointer;
-    opacity: 0.5;
-  }
-  
-  .nav-button.active {
-    opacity: 1;
-    color: rgba(255, 215, 0, 1);
-  }
-  
+  position: relative;
+  padding: 20px;
+  background-color: #1b1b1b;
+  color: white;
+  font-family: 'Pretendard Variable', sans-serif;
+}
+
+.function-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 0;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.function-item.active {
+  opacity: 1;
+}
+
+.function-number {
+  font-size: 12vw;
+  font-weight: 700;
+  color: #24353D;
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+  margin-right: -10vw; /* 숫자와 글씨를 겹치게 하기 위해 왼쪽 여백 추가 */
+}
+
+.function-text {
+  flex: 1;
+  margin-left: 5vw; /* 글씨를 오른쪽으로 밀기 위해 여백 추가 */
+  z-index: 2;
+  margin-bottom: 5vw;
+}
+
+.function-title {
+  font-size: 1.5vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 7vw; /* 숫자의 중간에서 시작되도록 여백 조정 */
+  margin-bottom: 3vw;
+}
+
+.tagline {
+  height: 0.1vw;
+  margin-right: 1vw;
+}
+
+.function-subtitle {
+  color: rgba(255, 215, 0, 1);
+}
+
+.function-main-title {
+  font-size: 3vw;
+  margin: 10px 0;
+  margin-bottom: 5vw;
+}
+
+.function-description {
+  font-size: 1.5vw;
+  margin: 20px 0;
+  line-height: 2;
+  margin-bottom: 5vw;
+}
+
+.read-more {
+  font-size: 1vw;
+  color: rgba(255, 215, 0, 1);
+  cursor: pointer;
+}
+
+.function-image {
+  width: 40%;
+}
+
+.function-image img {
+  width: 100%;
+}
+
+.function-navigation {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5vw;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.nav-button.active {
+  opacity: 1;
+  color: rgba(255, 215, 0, 1);
+}
