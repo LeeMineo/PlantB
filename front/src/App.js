@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
@@ -9,6 +8,7 @@ import Data from './sections/Data';
 import Tech from './sections/Tech';
 import Value from './sections/Value';
 import Footer from './components/Footer';
+import FloatingButton from './components/FloatingButton'; // Import the FloatingButton component
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
       <Tech />
       <Value />
       <Footer />
+      <FloatingButton /> {/* Add the FloatingButton component here */}
     </div>
   );
 }

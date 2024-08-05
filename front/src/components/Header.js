@@ -28,7 +28,7 @@ const Header = () => {
         <Link to="functions" smooth={true} duration={500}>Functions</Link>
         <Link to="data" smooth={true} duration={500}>Data</Link>
         <Link to="tech" smooth={true} duration={500}>Technique</Link>
-        <Link to="value" smooth={true} duration={500}>Value</Link>
+        {/* <Link to="value" smooth={true} duration={500}>Value</Link> */}
       </nav>
     </header>
   );
