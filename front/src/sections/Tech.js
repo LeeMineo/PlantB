@@ -52,11 +52,11 @@ const Tech = () => {
     <section id="tech" className="tech-section">
       <h2 className="tech-title">플랜트비는 최신 기술을 활용하여 사용자에게 최고의 경험을 제공합니다.</h2>
       <div className="tech-details">
-        <p className={`tech-description ${serviceInView ? 'fade-in' : ''}`} ref={serviceRef}>
+        {/* <p className={`tech-description ${serviceInView ? 'fade-in' : ''}`} ref={serviceRef}>
         플랜트비의 개발 진행 상태
         </p>
-        
-        <div className="progress-bars">
+         */}
+        {/* <div className="progress-bars">
           <div className="progress-bar">
             <div className="progress-bar-title">UI/UX 기획</div>
             <div className="progress">
@@ -78,7 +78,7 @@ const Tech = () => {
             </div>
             <div className="progress-percentage">50%</div>
           </div>
-        </div>
+        </div> */}
 
         <p className={`tech-description ${serviceInView ? 'fade-in' : ''}`} ref={serviceRef}>
         서비스 8월 중 웹앱으로 출시예정. 웹앱 출시 후 차후 어플 출시.
