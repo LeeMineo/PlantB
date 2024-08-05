@@ -2,8 +2,8 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #ff6f61;
-    color: white;
+    background-color: #4C856D;
+    color: 324B48;
     border: none;
     border-radius: 50px;
     padding: 15px 25px;
@@ -15,6 +15,6 @@
   }
   
   .floating-button:hover {
-    background-color: #ff4c3b;
+    background-color: #A3B9B6;
   }
   
