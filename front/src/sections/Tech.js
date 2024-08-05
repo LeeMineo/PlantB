@@ -80,10 +80,6 @@ const Tech = () => {
           </div>
         </div> */}
 
-        <p className={`tech-description ${serviceInView ? 'fade-in' : ''}`} ref={serviceRef}>
-        서비스 8월 중 웹앱으로 출시예정. 웹앱 출시 후 차후 어플 출시.
-        </p>
-
         <div className="tech-subsection">
           <h3 className="tech-subtitle">서비스 구성</h3>
           <ul>
@@ -111,6 +107,9 @@ const Tech = () => {
             ))}
           </ul>
         </div>
+        <p className={`tech-description ${serviceInView ? 'fade-in' : ''}`} ref={serviceRef}>
+        *8월 중 웹앱으로 출시예정. 웹앱 출시 후 차후 어플 출시.
+        </p>
       </div>
     </section>
   );
