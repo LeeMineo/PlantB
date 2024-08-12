@@ -7,7 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
-  mode: 'development',
+  mode: 'production', // 'production' 모드로 설정
   resolve: {
     alias: {
       'react-native$': 'react-native-web',
