@@ -8,7 +8,7 @@ const Navigation = () => {
   return (
     <nav className="floating-nav">
       <NavLink
-        to="/"
+        to="/main"
         className={({ isActive }) => (isActive ? "nav-item active" : "nav-item")}
       >
         <FaHome />

@@ -1,0 +1,37 @@
+/* src/pages/SplashPage.css */
+
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #6c9d5a; /* 배경 색상 */
+  padding: 20px;
+  text-align: center;
+  color: #ffffff; /* 기본 글씨 색상 */
+}
+
+.logo-icon {
+  margin-top: 40%;
+  width: 100px; /* 로고 아이콘 크기 */
+}
+
+.title {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px; /* 제목과 부제목 사이의 간격 조정 */
+}
+
+.highlight {
+  color: #FFD236; /* B 부분의 강조 색상 */
+}
+
+.subtitle {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 1.1rem;
+  margin-top: 40%; /* 부제목과 제목 사이의 간격 조정 */
+  color: #ffffff;
+}
