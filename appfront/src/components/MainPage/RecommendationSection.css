@@ -1,5 +1,5 @@
 .recommendation-section {
-  margin-top: 12vw; /* 3rem을 vw로 변환 */
+  margin-top: 15vw; /* 3rem을 vw로 변환 */
   padding: 0 6vw; /* 1.5rem을 vw로 변환 */
 }
 
@@ -25,11 +25,11 @@ h3 {
 .activity-card {
   background-color: #fff;
   border-radius: 4vw; /* 1rem을 vw로 변환 */
-  padding: 3vw; /* 1rem을 vw로 변환 */
+  padding: 4vw; /* 1rem을 vw로 변환 */
   box-shadow: 0 1.2vw 1.2vw rgba(0, 0, 0, 0.2); /* 0.3rem을 vw로 변환 */
   text-align: center;
   flex: 0 0 auto; /* 아이템이 가로로 스크롤되도록 설정 */
-  width: 23vw; /* 6rem을 vw로 변환 */
+  width: 24vw; /* 6rem을 vw로 변환 */
 }
 
 .activity-icon {
@@ -39,7 +39,7 @@ h3 {
 }
 
 .activity-card p {
-  font-size: 3vw; /* 0.8rem을 vw로 변환 */
+  font-size: 2.8vw; /* 0.8rem을 vw로 변환 */
   font-weight: 600;
   margin: 0;
 }

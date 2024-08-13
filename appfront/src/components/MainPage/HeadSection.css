@@ -1,6 +1,6 @@
 .head-section {
   background-color: #4C856D;
-  padding: 5vw; /* 패딩을 vw로 변환하고 더 크게 조정 */
+  padding: 6vw; /* 패딩을 vw로 변환하고 더 크게 조정 */
   border-bottom-left-radius: 6vw; /* 모서리 radius를 vw로 변환 */
   border-bottom-right-radius: 6vw;
   color: white;
@@ -47,7 +47,7 @@
 }
 
 .progress-info {
-  margin-top: 2.5vw; /* 마진을 vw로 변환 */
+  margin-top: 3vw; /* 마진을 vw로 변환 */
 }
 
 .progress-card {
