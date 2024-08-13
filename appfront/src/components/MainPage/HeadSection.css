@@ -1,6 +1,6 @@
 .head-section {
   background-color: #4C856D;
-  padding: 6vw; /* 패딩을 vw로 변환하고 더 크게 조정 */
+  padding: 7vw; /* 패딩을 vw로 변환하고 더 크게 조정 */
   border-bottom-left-radius: 6vw; /* 모서리 radius를 vw로 변환 */
   border-bottom-right-radius: 6vw;
   color: white;
@@ -29,8 +29,8 @@
 }
 
 .user-text h2 {
-  font-size: 5.2vw; /* 폰트 크기를 vw로 변환 */
-  font-weight: 400;
+  font-size: 4vw; /* 폰트 크기를 vw로 변환 */
+  font-weight: 500;
   margin: 0;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .settings-icon {
-  font-size: 6vw; /* 아이콘 크기를 vw로 변환 */
+  font-size: 5vw; /* 아이콘 크기를 vw로 변환 */
   color: white;
   cursor: pointer;
 }
@@ -60,17 +60,17 @@
 
 .progress-title {
   font-weight: 500;
-  font-size: 2.8vw; /* 폰트 크기를 vw로 변환 */
+  font-size: 2.6vw; /* 폰트 크기를 vw로 변환 */
 }
 
 .progress-subtitle {
   font-weight: 600;
-  font-size: 4.4vw; /* 폰트 크기를 vw로 변환 */
+  font-size: 4vw; /* 폰트 크기를 vw로 변환 */
 }
 
 .progress-percentage {
   font-weight: 400;
-  font-size: 2.8vw; /* 폰트 크기를 vw로 변환 */
+  font-size: 2.6vw; /* 폰트 크기를 vw로 변환 */
 }
 
 .progress-bar {
