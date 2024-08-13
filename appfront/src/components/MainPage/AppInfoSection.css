@@ -1,22 +1,22 @@
 .app-info-section {
-    padding: 4vw;
+    padding: 5vw; /* 패딩을 조금 더 크게 조정 */
     background-color: #f9f9f9;
     text-align: center;
-    font-size: 1.8vw;
+    font-size: 2.5vw; /* 폰트 크기를 조금 더 크게 조정 */
     color: #666;
   }
   
   .top-buttons {
-    margin-bottom: 2.5vw;
+    margin-bottom: 3vw; /* 마진을 조금 더 크게 조정 */
   }
   
   .info-button {
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 1.25vw;
-    padding: 0.75vw 2vw;
-    margin: 0 1.25vw;
-    font-size: 2vw;
+    border-radius: 1.5vw; /* 버튼의 둥근 모서리 크기를 조금 더 크게 조정 */
+    padding: 1vw 2.5vw; /* 패딩을 조금 더 크게 조정 */
+    margin: 0 1.5vw; /* 마진을 조금 더 크게 조정 */
+    font-size: 3vw; /* 폰트 크기를 조금 더 크게 조정 */
     cursor: pointer;
   }
   
@@ -25,13 +25,13 @@
   }
   
   .links {
-    margin-bottom: 1.25vw;
+    margin-bottom: 1.5vw; /* 마진을 조금 더 크게 조정 */
   }
   
   .info-link {
     color: #666;
     text-decoration: none;
-    margin: 0 1.25vw;
+    margin: 0 1.5vw; /* 마진을 조금 더 크게 조정 */
   }
   
   .info-link:hover {
@@ -39,13 +39,13 @@
   }
   
   .separator {
-    margin: 0 0.6vw;
+    margin: 0 0.75vw; /* 마진을 조금 더 크게 조정 */
     color: #ccc;
   }
   
   .company-info {
-    margin-top: 2.5vw;
-    font-size: 1.8vw;
+    margin-top: 3vw; /* 마진을 조금 더 크게 조정 */
+    font-size: 2.5vw; /* 폰트 크기를 조금 더 크게 조정 */
     color: #999;
   }
   
