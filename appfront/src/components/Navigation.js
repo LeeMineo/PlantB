@@ -1,12 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaHome, FaMap, FaSmile, FaUserCog } from 'react-icons/fa';
 import { BsCameraFill } from 'react-icons/bs';
 import '../css/components/Navigation.css';
 
 const Navigation = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        // 스크롤이 아래로
+        setIsVisible(false);
+      } else {
+        // 스크롤이 위로
+        setIsVisible(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <nav className="floating-nav">
+    <nav className={`floating-nav ${isVisible ? 'visible' : 'hidden'}`}>
       <NavLink
         to="/main"
         className={({ isActive }) => (isActive ? "nav-item active" : "nav-item")}

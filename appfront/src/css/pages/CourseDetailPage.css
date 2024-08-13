@@ -1,0 +1,23 @@
+.course-detail-page {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .course-detail-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .course-detail-location {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .course-detail-description {
+    font-size: 1rem;
+    color: #333;
+  }
+  
