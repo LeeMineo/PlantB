@@ -15,14 +15,15 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.floating-nav.hidden {
-  transform: translateX(-50%) translateY(100px); /* 네비게이션 바를 아래로 숨김 */
-  opacity: 0; /* 숨길 때 투명하게 만듦 */
+.visible {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
 }
 
-.floating-nav.visible {
-  transform: translateX(-50%) translateY(0);
-  opacity: 1; /* 나타날 때 불투명하게 만듦 */
+.hidden {
+  transform: translateX(-50%) translateY(100%);
+  opacity: 0;
+  pointer-events: none; /* 사용자가 숨겨진 상태에서 클릭하지 못하도록 설정 */
 }
 
 .nav-item {

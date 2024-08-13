@@ -10,11 +10,11 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        // 스크롤이 아래로
+      if (window.scrollY > lastScrollY && window.scrollY > 50) {
+        // 스크롤이 아래로 이동하고 일정량 스크롤 되었을 때
         setIsVisible(false);
-      } else {
-        // 스크롤이 위로
+      } else if (window.scrollY < lastScrollY) {
+        // 스크롤이 위로 이동할 때
         setIsVisible(true);
       }
       setLastScrollY(window.scrollY);
