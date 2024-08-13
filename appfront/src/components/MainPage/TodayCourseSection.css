@@ -1,22 +1,22 @@
 .today-course-section {
-  padding: 1.5rem;
+  padding: 6vw; /* 1.5rem을 vw로 변환 */
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 4.8vw; /* 1.2rem을 vw로 변환 */
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 4vw; /* 1rem을 vw로 변환 */
 }
 
 .course-grid {
   display: flex;
-  gap: 2rem;
+  gap: 8vw; /* 2rem을 vw로 변환 */
   overflow-x: auto; /* 가로 스크롤 허용 */
-  padding: 0.5rem; /* 스크롤바에 대한 여유 공간 확보 */
+  padding: 2vw; /* 0.5rem을 vw로 변환 */
 }
 
 .course-grid::-webkit-scrollbar {
-  display: none; /* 스크롤바 숨기기 (선택 사항) */
+  display: none; /* 스크롤바 숨기기 */
 }
 
 .course-card {
@@ -24,19 +24,18 @@ h3 {
   flex-direction: column;
   background-color: none;
   overflow: hidden;
-  min-width: 250px; /* 카드의 최소 너비 설정 */
-  flex-shrink: 0; /* 모든 카드가 같은 크기를 유지하도록 설정 */
+  width: 70vw; /* 250px을 vw로 변환 */
+  flex-shrink: 0;
   position: relative;
-
 }
 
 .course-image {
   width: 100%;
-  height: 150px;
+  height: 40vw; /* 150px을 vw로 변환 */
   object-fit: cover;
-  border-radius: 1rem;
-  margin-bottom: 0.8rem; /* 이미지와 텍스트 사이에 간격 추가 */
-  box-shadow: 0 0.13rem 0.3rem rgba(0, 0, 0, 0.3);
+  border-radius: 4vw; /* 1rem을 vw로 변환 */
+  margin-bottom: 3.2vw; /* 0.8rem을 vw로 변환 */
+  box-shadow: 0 0.52vw 1.2vw rgba(0, 0, 0, 0.3); /* 0.13rem과 0.3rem을 vw로 변환 */
 }
 
 .course-info {
@@ -46,15 +45,15 @@ h3 {
 }
 
 .course-info h4 {
-  font-size: 1rem;
+  font-size: 4vw; /* 1rem을 vw로 변환 */
   font-weight: 600;
   margin: 0;
-  color: #2c3e50; /* 제목 색상 */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+  color: #2c3e50;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
 }
 
 .course-info p {
-  font-size: 0.8rem;
+  font-size: 3.2vw; /* 0.8rem을 vw로 변환 */
   color: #555;
   margin: 0;
 }
@@ -63,12 +62,12 @@ h3 {
   background-color: #4C856D;
   color: white;
   border: none;
-  border-radius: 0.3rem;
-  padding: 0.3rem 0.7rem;
-  font-size: 0.8rem;
+  border-radius: 1.2vw; /* 0.3rem을 vw로 변환 */
+  padding: 1.2vw 2.8vw; /* 0.3rem과 0.7rem을 vw로 변환 */
+  font-size: 3.2vw; /* 0.8rem을 vw로 변환 */
   cursor: pointer;
   transition: background-color 0.3s ease;
-  box-shadow: 0 0.13rem 0.3rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.52vw 1.2vw rgba(0, 0, 0, 0.2); /* 0.13rem과 0.3rem을 vw로 변환 */
 }
 
 .view-more:hover {
