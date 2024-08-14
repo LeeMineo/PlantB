@@ -1,87 +1,101 @@
-.head-section {
-  background-color: #4C856D;
-  padding: 7vw; /* 패딩을 vw로 변환하고 더 크게 조정 */
-  border-bottom-left-radius: 6vw; /* 모서리 radius를 vw로 변환 */
-  border-bottom-right-radius: 6vw;
-  color: white;
-  position: relative;
-  height: 40vw; /* 높이를 vw로 변환 */
-  box-sizing: border-box;
-  box-shadow: 0 0.6vw 1.2vw rgba(0, 0, 0, 0.3); /* 그림자를 vw로 변환 */
-  margin-bottom: 8vw;
+.headersection-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.user-info {
+.headersection-header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  margin-bottom: 4vw;
+}
+
+.headersection-header-logo img {
+  height: 9vw;
+}
+
+.headersection-header-logo h1 {
+  color: #fff;
+  font-size: 6vw;
+  margin: 0;
+}
+
+.headersection-user-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  padding: 2vw;
 }
 
-.profile-image {
-  width: 12.5vw; /* 너비를 vw로 변환 */
-  height: 12.5vw;
+.headersection-profile-image {
+  width: 13.5vw;
+  height: 13.5vw;
   border-radius: 50%;
-  margin-right: 2.5vw; /* 마진을 vw로 변환 */
+  object-fit: cover; /* Ensure the image stays within its container */
 }
 
-.user-text {
+.headersection-user-text {
   flex-grow: 1;
+  margin-left: 4vw;
 }
 
-.user-text h2 {
-  font-size: 4.5vw; /* 폰트 크기를 vw로 변환 */
+.headersection-user-name {
+  font-size: 4.5vw;
   font-weight: 500;
+  color: white;
   margin: 0;
 }
 
-.user-text p {
-  font-size: 3.2vw; /* 폰트 크기를 vw로 변환 */
-  font-weight: 200;
+.headersection-user-level {
+  font-size: 3vw;
+  color: white;
   margin: 0;
 }
 
-.settings-icon {
-  font-size: 5vw; /* 아이콘 크기를 vw로 변환 */
+.headersection-settings-icon {
+  font-size: 6vw;
   color: white;
   cursor: pointer;
 }
 
-.progress-info {
-  margin-top: 3vw; /* 마진을 vw로 변환 */
-}
-
-.progress-card {
+.headersection-progress-card {
   background-color: white;
-  color: black;
-  border-radius: 4vw; /* radius를 vw로 변환 */
-  padding: 4vw; /* 패딩을 vw로 변환 */
-  box-shadow: 0 0.52vw 1.2vw rgba(0, 0, 0, 0.3); /* 그림자를 vw로 변환 */
+  border-radius: 5.5vw;
+  padding: 4vw;
+  box-shadow: 0px 2vw 3vw rgba(0, 0, 0, 0.2);
+  margin-top: 2vw;
+  width: 95%;
 }
 
-.progress-title {
-  font-weight: 500;
-  font-size: 2.8vw; /* 폰트 크기를 vw로 변환 */
+.headersection-progress-title {
+  font-size: 3.5vw;
+  margin: 0;
 }
 
-.progress-subtitle {
-  font-weight: 600;
-  font-size: 4.4vw; /* 폰트 크기를 vw로 변환 */
+.headersection-progress-subtitle {
+  font-size: 5vw;
+  margin: 0;
+  font-weight: bold;
 }
 
-.progress-percentage {
-  font-weight: 400;
-  font-size: 2.8vw; /* 폰트 크기를 vw로 변환 */
+.headersection-progress-percentage {
+  font-size: 3vw;
+
 }
 
-.progress-bar {
+.headersection-progress-bar {
   background-color: #ddd;
-  border-radius: 2.5vw; /* border-radius를 vw로 변환 */
-  height: 2.5vw; /* 높이를 vw로 변환 */
+  border-radius: 2vw;
+  height: 3vw;
   width: 100%;
 }
 
-.progress-bar-fill {
+.headersection-progress-bar-fill {
   background-color: #4C856D;
   height: 100%;
-  border-radius: 2.5vw;
+  border-radius: 2vw;
 }
