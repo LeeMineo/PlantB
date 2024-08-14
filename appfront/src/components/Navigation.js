@@ -41,7 +41,7 @@ const Navigation = () => {
         className={({ isActive }) => (isActive ? "nav-item active" : "nav-item")}
       >
         <FaMap />
-        <span>지도</span>
+        <span>등산로</span>
       </NavLink>
       <div className="nav-item camera">
         <BsCameraFill />

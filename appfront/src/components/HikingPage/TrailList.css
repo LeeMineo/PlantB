@@ -1,0 +1,32 @@
+/* TrailList.css */
+.trail-list {
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+  }
+  
+  .trail-item {
+    background-color: #f9f9f9;
+    padding: 3vw;
+    border-radius: 4vw;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
+  }
+  
+  .trail-name {
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 2vw;
+  }
+  
+  .trail-detail {
+    font-size: 4vw;
+    color: #555;
+  }
+  
+  .trail-no-data {
+    font-size: 4vw;
+    color: #999;
+    text-align: center;
+  }
+  
