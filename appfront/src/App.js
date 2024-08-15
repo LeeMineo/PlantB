@@ -4,7 +4,7 @@ import SplashPage from './pages/SplashPage';
 import AuthPage from './pages/AuthPage';
 import MainPage from './pages/MainPage';
 import HikingPage from './pages/HikingPage';
-import PlantDictionaryPage from './pages/PlantDictionaryPage';
+import DictionaryPage from './pages/DictionaryPage';
 import SettingsPage from './pages/SettingsPage';
 import CourseDetailPage from './pages/CourseDetailPage';
 import Navigation from './components/Navigation';
@@ -35,7 +35,7 @@ function AppContent() {
         {/* 메인 페이지들 */}
         <Route path="/main" element={<MainPage />} />
         <Route path="/hiking" element={<HikingPage />} />
-        <Route path="/plant-dictionary" element={<PlantDictionaryPage />} />
+        <Route path="/plant-dictionary" element={<DictionaryPage />} />
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="/course/:courseId" element={<CourseDetailPage />} /> {/* ID 기반 코스 상세 페이지 */}
       </Routes>

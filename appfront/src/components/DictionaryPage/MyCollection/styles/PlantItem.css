@@ -1,0 +1,42 @@
+.plantitem-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plantitem-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .plantitem-content {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  .plantitem-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .plantitem-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .plantitem-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .plantitem-icon {
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+  }
+  

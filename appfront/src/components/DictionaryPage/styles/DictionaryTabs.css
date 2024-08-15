@@ -1,0 +1,32 @@
+.dictionary-tabs {
+    display: flex;
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    padding: 3vw;
+    margin-top: 8vw;
+    gap: 2vw; /* 아이템 사이에 간격 추가 */
+    margin-right: 25vw;
+    margin-left: 3vw;
+  }
+  
+  .dictionary-tab {
+    padding: 1.2vw; /* 아이템들의 너비를 조정하기 위해 패딩을 설정 */
+    font-size: 4vw;
+    font-weight: 600;
+    background-color: #C6D2CE; /* 비활성화된 상태의 배경색 */
+    border: none;
+    cursor: pointer;
+    color: #fff; /* 기본 색상 */
+    border-radius: 20px; /* 둥근 모서리 */
+    transition: background-color 0.3s, color 0.3s; /* 부드러운 전환 효과 */
+    flex: 1; /* 아이템의 길이를 고정시킴 */
+  }
+  
+  .dictionary-tab.active {
+    background-color: #4C856D; /* 활성화된 상태일 때의 색상 */
+    color: #fff; /* 활성화된 상태일 때의 텍스트 색상 */
+  }
+  
+  .dictionary-tab:not(.active):hover {
+    background-color: #e0e0e0; /* 비활성화된 상태에서의 호버 색상 */
+  }
+  

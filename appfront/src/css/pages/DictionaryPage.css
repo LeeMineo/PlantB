@@ -1,0 +1,11 @@
+.dictionary-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.dictionary-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}

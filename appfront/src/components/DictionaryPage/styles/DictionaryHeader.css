@@ -1,0 +1,45 @@
+.dictionary-header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2vw; /* Adjust spacing */
+  }
+
+  .dictionary-searchbar {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF; /* White background */
+    border-radius: 50px; /* Rounded corners */
+    padding: 3vw; /* Padding inside the search bar */
+    width: 90vw; /* Adjust width as needed */
+    margin-top: 2vw; /* Space between logo and search bar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for effect */
+  }
+  
+  .dictionary-search-icon {
+    color: #999999; /* Light grey color for search icon */
+    margin: 1vw;
+    font-size: 5vw; /* Adjust icon size */
+  }
+  
+  .dictionary-filter-icon {
+    color: #999999; /* Light grey color for filter icon */
+    margin: 1vw; /* Push to the right end */
+    font-size: 5vw; /* Adjust icon size */
+  }
+  
+  .dictionary-searchbar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 4vw; /* Adjust font size */
+    color: #666666; /* Text color */
+    background-color: transparent; /* Transparent background */
+    margin-left: 2vw;
+  }
+  
+  .dictionary-searchbar input::placeholder {
+    color: #CCCCCC; /* Placeholder text color */
+  }
+  

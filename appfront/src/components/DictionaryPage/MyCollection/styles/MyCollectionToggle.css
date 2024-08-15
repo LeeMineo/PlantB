@@ -1,0 +1,20 @@
+.collection-toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .collection-toggle-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #f0f0f0;
+    margin: 0 5px;
+  }
+  
+  .collection-toggle-button.active {
+    background-color: #4caf50;
+    color: white;
+  }
+  

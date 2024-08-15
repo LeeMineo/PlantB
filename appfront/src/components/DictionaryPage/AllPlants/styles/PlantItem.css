@@ -1,0 +1,79 @@
+.plant-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 5vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 5vw;
+    transition: box-shadow 0.3s;
+    height: 30vw; /* 높이를 고정 */
+}
+  
+.plant-item:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+  
+.plant-item-image {
+    width: 30%;
+    height: 100%;  /* 이미지를 부모 요소의 높이에 맞게 조정 */
+    object-fit: cover;  /* 이미지 비율을 유지하면서 꽉 채우기 */
+}
+  
+.plant-item-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3.5vw;
+}
+  
+.plant-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+  
+.plant-item-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+  
+.plant-item-actions {
+    display: flex;
+    align-items: center;
+}
+  
+.plant-item-icon {
+    color: #FF6B6B; /* 좋아요 아이콘 색상 */
+    margin-left: 3vw;
+    cursor: pointer;
+    font-size: 6vw; /* 아이콘 크기 설정 */
+}
+  
+.plant-item-icon:last-child {
+    color: #FFD700; /* 북마크 아이콘 색상 */
+    font-size: 6vw;
+}
+  
+.plant-item-description {
+    font-size: 3.5vw;
+    color: #555;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 두 줄까지만 보이게 설정 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 1.5vw;
+}
+  
+.plant-item-more {
+    color: #AEAEAE; /* 링크 색상 */
+    font-size: 3vw;
+    margin-top: 1vw;
+    cursor: pointer;
+    align-self: flex-end;
+    text-decoration: none; /* 밑줄 제거 */
+}
