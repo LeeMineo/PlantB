@@ -1,3 +1,4 @@
+// TrailSlider.js
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -5,40 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Pagination, Autoplay } from 'swiper/modules';
 import './TrailSlider.css'; // Custom styles for the slider
-
-const trails = [
-  {
-    title: '북한산',
-    course: '북한산성코스',
-    stars: 3,
-    recommendation: '추천 등산로',
-    image: './dummy/back.png',
-    difficulty: '중',
-    length: '3.4km',
-    time: '2.4h ~ 3h',
-  },
-  {
-    title: '내연산',
-    course: '보경사 코스',
-    stars: 5,
-    recommendation: '가장 인기 많은 등산로',
-    image: './dummy/back.png',
-    difficulty: '상',
-    length: '13.4km',
-    time: '5h ~ 6h',
-  },
-  {
-    title: '환호해맞이산',
-    course: '보경사 코스',
-    stars: 2,
-    recommendation: '나와 가장 가까운 등산로',
-    image: './dummy/back.png',
-    difficulty: '하',
-    length: '4.4km',
-    time: '1h ~ 2h',
-  },
-  
-];
+import trails from '../../data/trailsData'; // trailsData.js에서 데이터 가져오기
 
 const TrailSlider = () => {
   return (

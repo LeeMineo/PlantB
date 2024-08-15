@@ -1,32 +1,92 @@
-/* TrailList.css */
 .trail-list {
-    padding: 4vw;
-    display: flex;
-    flex-direction: column;
-    gap: 3vw;
-  }
-  
-  .trail-item {
-    background-color: #f9f9f9;
-    padding: 3vw;
-    border-radius: 4vw;
-    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
-  }
-  
-  .trail-name {
-    font-size: 5vw;
-    font-weight: 600;
-    margin-bottom: 2vw;
-  }
-  
-  .trail-detail {
-    font-size: 4vw;
-    color: #555;
-  }
-  
-  .trail-no-data {
-    font-size: 4vw;
-    color: #999;
-    text-align: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+}
+
+.trail-item {
+  position: relative;
+  width: 100%;
+  height: 65vw; /* Increase height */
+  border-radius: 6vw;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trail-image {
+  width: 90%;
+  height: 40vw;
+  object-fit: cover;
+  border-radius: 5vw;
+  box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.1);
+}
+
+.trail-content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -10vw);
+  background: rgba(255, 255, 255, 1);
+  padding: 2.5vw;
+  border-radius: 4vw;
+  box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.3);
+  text-align: left;
+  width: 90%;
+}
+
+.trail-locate {
+  display: flex; /* 가로 배치 */
+  align-items: center; /* 세로 가운데 정렬 */
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: #4C856D;
+}
+
+.trail-locate-icon {
+  margin-right: 1vw; /* 아이콘과 텍스트 사이의 간격 */
+  font-size: 3vw; /* 아이콘 크기 조절 */
+}
+
+.trail-main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.trail-name {
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+.trail-course {
+  font-size: 3.5vw;
+  display: flex;
+  align-items: center;
+}
+
+.trail-info-container {
+  font-size: 2.8vw;
+  color: #666;
+  text-align: left;
+}
+
+.trail-info {
+  margin-bottom: 0vw;
+}
+
+.trail-star {
+  font-size: 3.5vw;
+  color: #F4A261;
+  margin-left: 0.5vw;
+}
+
+.trail-no-data {
+  font-size: 16px;
+  color: #777;
+  text-align: center;
+  padding: 20px;
+}

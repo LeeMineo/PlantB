@@ -1,12 +1,10 @@
 /* src/pages/HikingPage.css */
-
-.page {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 24px;
-    color: #333;
+  .selected-location {
+    text-align: left;
+    margin-left: 5vw;
+    margin-bottom: 2vw;
+    margin-top: 10vw;
+    font-weight: 200 !important;
+    font-size: 3.9vw; /* 필요에 따라 크기를 조절하세요 */
   }
   

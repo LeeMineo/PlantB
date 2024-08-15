@@ -1,0 +1,43 @@
+const trails = [
+  {
+    title: '북한산',
+    course: '북한산성코스',
+    stars: 3,
+    recommendation: '추천 등산로',
+    region: '서울',
+    city: '강북구',
+    locationDetail: '우이동',
+    image: './dummy/back.png',
+    difficulty: '중',
+    length: '3.4km',
+    time: '2.4h ~ 3h',
+  },
+  {
+    title: '내연산',
+    course: '보경사 코스',
+    stars: 5,
+    recommendation: '가장 인기 많은 등산로',
+    region: '경북',
+    city: '포항시 북구',
+    locationDetail: '송라면',
+    image: './dummy/back.png',
+    difficulty: '상',
+    length: '13.4km',
+    time: '5h ~ 6h',
+  },
+  {
+    title: '환호해맞이산',
+    course: '환호해맞이공원',
+    stars: 2,
+    recommendation: '나와 가장 가까운 등산로',
+    region: '경북',
+    city: '포항시 북구',
+    locationDetail: '환호동',
+    image: './dummy/back.png',
+    difficulty: '하',
+    length: '4.4km',
+    time: '1h ~ 2h',
+  },
+];
+
+export default trails;
