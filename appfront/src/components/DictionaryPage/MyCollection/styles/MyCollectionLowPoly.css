@@ -1,30 +1,6 @@
 .collectionlowpoly-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .collectionlowpoly-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .collectionlowpoly-item {
-    width: 100px;
-    text-align: center;
-  }
-  
-  .collectionlowpoly-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .collectionlowpoly-name {
-    margin-top: 5px;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
+  width: 100%;
+  height: 100vh; /* 뷰포트 전체 높이 */
+  position: relative;
+  overflow: hidden;
+}
