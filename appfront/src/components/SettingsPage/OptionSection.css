@@ -1,0 +1,42 @@
+.option-section {
+    width: 100%;
+    padding: 3vw;
+    margin-top: 5vw;
+    background-color: #ffffff;
+    border-radius: 10vw;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .option-section:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .option-section-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .option-section-icon {
+    font-size: 6vw;
+    color: #228B22;
+    margin-right: 4vw;
+  }
+  
+  .option-section-text h3 {
+    font-size: 4vw;
+    font-weight: normal;
+    color: #333333;
+    margin: 0;
+  }
+  
+  .option-section-arrow {
+    font-size: 6vw;
+    color: #999999;
+  }
+  
