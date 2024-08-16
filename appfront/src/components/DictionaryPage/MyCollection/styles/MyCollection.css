@@ -1,5 +1,6 @@
 .mycollection-container {
-    padding: 10px;
     background-color: #f5f5f5;
   }
-  
+.mycollection-toggle{
+    margin-bottom: 5vw;
+}

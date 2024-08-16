@@ -2,6 +2,7 @@
     display: flex;
     justify-content: flex-start; /* 왼쪽 정렬 */
     padding: 3vw;
+    padding-bottom: 0;
     margin-top: 8vw;
     gap: 2vw; /* 아이템 사이에 간격 추가 */
     margin-right: 25vw;

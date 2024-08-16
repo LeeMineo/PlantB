@@ -26,10 +26,12 @@ const MyCollection = () => {
   const [view, setView] = useState('list');
 
   return (
-    <div className="mycollection-container">
-      <MyCollectionToggle view={view} setView={setView} />
-      {view === 'list' ? <MyCollectionList plants={plants} /> : <MyCollectionLowPoly plants={plants} />}
-    </div>
+    <><div className="mycollection-toggle">
+          <MyCollectionToggle view={view} setView={setView} />
+      </div>
+      <div className="mycollection-container">
+        {view === 'list' ? <MyCollectionList plants={plants} /> : <MyCollectionLowPoly plants={plants} />}
+    </div></>
   );
 };
 

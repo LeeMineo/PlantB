@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/MyCollectionToggle.css';
+import { FaBars, FaCube } from 'react-icons/fa'; // 아이콘을 불러옵니다.
 
 const MyCollectionToggle = ({ view, setView }) => {
   return (
@@ -8,13 +9,13 @@ const MyCollectionToggle = ({ view, setView }) => {
         className={`collection-toggle-button ${view === 'list' ? 'active' : ''}`}
         onClick={() => setView('list')}
       >
-        리스트형
+        <FaBars /> {/* 리스트형 아이콘 */}
       </button>
       <button
         className={`collection-toggle-button ${view === 'lowpoly' ? 'active' : ''}`}
         onClick={() => setView('lowpoly')}
       >
-        로우폴리형
+        <FaCube /> {/* 로우폴리형 아이콘 */}
       </button>
     </div>
   );
