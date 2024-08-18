@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FiSettings } from 'react-icons/fi';
+import { FiSettings, FiChevronRight } from 'react-icons/fi'; // Imported right arrow icon
 import './HeadSection.css';
 import Header from '../../components/Header';  // Header component
 
@@ -10,11 +10,11 @@ const HeadSection = () => {
   // Dummy data
   const userName = "익명";
   const userLevel = "초보자";
-  const progressTitle = "도봉산 식물도감";
-  const progressPercentage = 80;
+  const progressTitle = "민서의 식물농장";
+  const progressPercentage = 4;
 
   return (
-    <Header height="55vw"> {/* Adjusted height */}
+    <Header height="50vw"> {/* Adjusted height */}
       <div className="headersection-header-content">
         <div className="headersection-user-info">
           <img 
@@ -30,11 +30,12 @@ const HeadSection = () => {
           <FiSettings className="headersection-settings-icon" onClick={() => navigate('/settings')} />
         </div>
         <div className="headersection-progress-card" onClick={() => navigate('/plant-dictionary')}>
-          <p className="headersection-progress-title">현재 진행중인 도감</p>
+          <p className="headersection-progress-title">내 도감</p>
           <p className="headersection-progress-subtitle">{progressTitle}</p>
-          <p className="headersection-progress-percentage">{progressPercentage}% 완료</p>
-          <div className="headersection-progress-bar">
-            <div className="headersection-progress-bar-fill" style={{ width: `${progressPercentage}%` }}></div>
+          <div className="headersection-progress-info">
+            <img src="./logo_black.svg" alt="Plant:B" className="headersection-progress-icon" />
+            <p className="headersection-progress-percentage">식물 개수: {progressPercentage}개 </p>
+            <FiChevronRight className="headersection-chevron-icon" />
           </div>
         </div>
       </div>

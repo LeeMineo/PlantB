@@ -35,7 +35,7 @@
   width: 13.5vw;
   height: 13.5vw;
   border-radius: 50%;
-  object-fit: cover; /* Ensure the image stays within its container */
+  object-fit: cover;
 }
 
 .headersection-user-text {
@@ -64,8 +64,9 @@
 
 .headersection-progress-card {
   background-color: white;
-  border-radius: 5.5vw;
-  padding: 4vw;
+  border-radius: 5vw;
+  padding: 2vw;
+  padding-left: 6vw;
   box-shadow: 0px 2vw 3vw rgba(0, 0, 0, 0.2);
   margin-top: 2vw;
   width: 95%;
@@ -73,6 +74,8 @@
 
 .headersection-progress-title {
   font-size: 3.5vw;
+  font-weight: 600;
+  color: #4C856D;
   margin: 0;
 }
 
@@ -82,20 +85,24 @@
   font-weight: bold;
 }
 
+.headersection-progress-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headersection-progress-icon {
+  width: 6vw;
+  height: 6vw;
+}
+
 .headersection-progress-percentage {
-  font-size: 3vw;
-
+  font-size: 3.2vw;
+  margin-left: 2vw;
+  flex-grow: 1;
 }
 
-.headersection-progress-bar {
-  background-color: #ddd;
-  border-radius: 2vw;
-  height: 3vw;
-  width: 100%;
-}
-
-.headersection-progress-bar-fill {
-  background-color: #4C856D;
-  height: 100%;
-  border-radius: 2vw;
+.headersection-chevron-icon {
+  font-size: 6vw;
+  color: #000;
 }

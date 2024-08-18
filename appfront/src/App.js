@@ -7,6 +7,10 @@ import HikingPage from './pages/HikingPage';
 import DictionaryPage from './pages/DictionaryPage';
 import SettingsPage from './pages/SettingsPage';
 import CourseDetailPage from './pages/CourseDetailPage';
+import CameraPage from './pages/Camera/CameraPage';  // CameraPage 추가
+import PhotoTipPage from './pages/Camera/PhotoTipPage';  // PhotoTipPage 추가
+import AnalysisResultPage from './pages/Camera/AnalysisResultPage';  // AnalysisResultPage 추가
+import SavedPlantsPage from './pages/Camera/SavedPlantsPage';  // SavedPlantsPage 추가
 import Navigation from './components/Navigation';
 
 function App() {
@@ -38,6 +42,12 @@ function AppContent() {
         <Route path="/plant-dictionary" element={<DictionaryPage />} />
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="/course/:courseId" element={<CourseDetailPage />} /> {/* ID 기반 코스 상세 페이지 */}
+        
+        {/* 추가된 페이지들 */}
+        <Route path="/camera" element={<CameraPage />} />  {/* CameraPage 경로 추가 */}
+        <Route path="/photo-tip" element={<PhotoTipPage />} />  {/* PhotoTipPage 경로 추가 */}
+        <Route path="/analysis-result" element={<AnalysisResultPage />} />  {/* AnalysisResultPage 경로 추가 */}
+        <Route path="/saved-plants" element={<SavedPlantsPage />} />  {/* SavedPlantsPage 경로 추가 */}
       </Routes>
       
       {/* 메인 페이지들에만 네비게이션 표시 */}
