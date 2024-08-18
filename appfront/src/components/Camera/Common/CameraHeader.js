@@ -1,18 +1,18 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { IoClose } from 'react-icons/io5';  // X 아이콘 추가
-import './CameraHeader.css';  // 스타일 파일 임포트
+import { IoClose } from 'react-icons/io5';
+import './CameraHeader.css';
 
-const CameraHeader = ({ title, isMainNavigation }) => { // isMainNavigation prop 추가
+const CameraHeader = ({ title }) => {
     const navigate = useNavigate();
 
     const handleBack = () => {
-        navigate('/main');  // 메인 페이지로 이동
+        navigate('/main');
     };
 
     return (
         <header className="camera-header">
-            <IoClose className="close-icon" onClick={handleBack} />  {/* X 아이콘과 클릭 이벤트 */}
+            <IoClose className="close-icon" onClick={handleBack} />
             <h1>{title}</h1>
         </header>
     );

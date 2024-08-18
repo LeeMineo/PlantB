@@ -2,14 +2,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    background-color: #333;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.5);  /* 반투명 검정 배경 */
     color: #fff;
+    position: absolute;  /* 고정 위치를 적용하여 헤더가 화면 상단에 떠있도록 */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;  /* 다른 요소들 위에 헤더가 나타나도록 */
 }
 
 .close-icon {
-    font-size: 24px;
+    font-size: 28px;  /* 아이콘 크기를 키움 */
     cursor: pointer;
+    color: #fff;  /* 아이콘 색상 흰색 */
 }
 
 h1 {
@@ -17,4 +23,5 @@ h1 {
     text-align: center;
     font-size: 18px;
     margin: 0;
+    color: #fff;  /* 제목 색상 흰색 */
 }
