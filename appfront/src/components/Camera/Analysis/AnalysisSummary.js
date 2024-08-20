@@ -14,8 +14,11 @@ const AnalysisSummary = ({ plantData }) => {
                     <h3>
                         Species: {result.species?.commonNames?.join(', ') || result.species?.scientificNameWithoutAuthor}
                     </h3>
+                    <br></br>
                     <p>Scientific Name: {result.species?.scientificName}</p>
+                    <br></br>
                     <p>Family: {result.species?.family?.scientificName}</p>
+                    <br></br>
                     <p>Score: {result.score}</p>
                     <div>
                         <h4>Images:</h4>

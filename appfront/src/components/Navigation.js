@@ -30,7 +30,7 @@ const Navigation = () => {
 
   useEffect(() => {
     // 카메라 관련 페이지에서 벗어나면 네비게이션을 다시 표시
-    if (location.pathname !== '/camera' && location.pathname !== '/photo-tip') {
+    if (location.pathname !== '/camera' && location.pathname !== '/photo-tip' && location.pathname !== '/analysis-result') {
       setShowNavigation(true);
     }
   }, [location]);
