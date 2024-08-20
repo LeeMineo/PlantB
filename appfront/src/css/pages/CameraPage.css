@@ -1,0 +1,74 @@
+/* CameraPage 전체 컨테이너 스타일 */
+#cameracont-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 전체 화면 높이를 차지 */
+    background-color: #000;
+}
+
+/* Video 요소 스타일 */
+#cameracont-view {
+    flex-grow: 1; /* Make sure it grows to take up more space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Increase the height significantly */
+    margin-bottom: 50vw; /* Add some margin to separate it from the controls */
+}
+
+/* Ensure video takes full space */
+#cameracont-view video {
+    width: 100%;
+    height: 100%; /* Fill the entire container */
+    object-fit: cover; /* Ensure the video covers the entire area */
+}
+
+/* Camera 하단 컨트롤 스타일 */
+#cameracont-controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10vw;
+    position: absolute;
+    bottom: 10vw; /* 화면 하단에 배치 */
+}
+
+/* 캡처 버튼 스타일 */
+#cameracont-capture {
+    background-color: #4C856D; /* Change this to the color of the outer circle */
+    border: none;
+    border-radius: 50%;
+    width: 18vw;
+    height: 18vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 22vw;
+    position: relative; /* Ensure relative positioning for inner circle */
+}
+
+/* Inner white circle */
+#cameracont-capture::before {
+    content: "";
+    position: absolute;
+    width: 14vw; /* Adjust this to control the size of the inner circle */
+    height: 14vw;
+    border-radius: 50%;
+    border: 3px solid white; /* White border */
+    background-color: transparent; /* Transparent inner circle */
+}
+
+
+/* 카메라 전환 버튼 스타일 */
+#cameracont-switch {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 12vw;
+    cursor: pointer;
+}
+
+

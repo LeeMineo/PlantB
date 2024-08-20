@@ -13,7 +13,6 @@ const CameraHeader = ({ title }) => {
     return (
         <header className="camera-header">
             <IoClose className="close-icon" onClick={handleBack} />
-            <h1>{title}</h1>
         </header>
     );
 };
