@@ -1,52 +1,81 @@
 #analysissum-summary {
-    padding: 4vw;
-    font-family: Arial, sans-serif;
-}
 
-#analysissum-plant-item {
-    background-color: #f9f9f9;
-    border-radius: 2vw;
-    padding: 3vw;
-    margin-bottom: 4vw;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    word-wrap: break-word; /* 긴 텍스트를 잘라서 줄 바꿈 */
-    overflow-x: auto; /* 내용이 잘리지 않고 스크롤 가능하도록 설정 */
-}
-
-#analysissum-plant-item h3,
-#analysissum-plant-item p {
-    margin: 1vw 0;
-    line-height: 1.5;
-}
-
-#analysissum-plant-item img {
-    max-width: 100%; /* 이미지가 영역을 넘지 않도록 설정 */
-    height: auto;
-    margin-top: 2vw;
-    border-radius: 1vw;
-}
-
-#analysissum-images-title {
-    margin-top: 2vw;
-    font-size: 3.6vw;
+    background-color: #F5F5F5;
 }
 
 #analysissum-title {
-    text-align: center;
-    margin-bottom: 6vw;
-    font-size: 6vw;
+    font-size: 24px;
     font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-#analysissum-no-data {
-    text-align: center;
-    font-size: 5vw;
-    color: #999;
-    margin-top: 10vw;
+.analysissum-plant-item {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#analysissum-no-images {
-    font-size: 4vw;
+.analysissum-plant-info {
+    margin-bottom: 20px;
+}
+
+.analysissum-species {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4C856D;
+    margin-bottom: 5px;
+}
+
+.analysissum-scientific-name,
+.analysissum-family,
+.analysissum-score {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.analysissum-images-container {
+    margin-bottom: 20px;
+}
+
+.analysissum-images-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.analysissum-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.analysissum-no-images {
+    font-size: 14px;
     color: #999;
-    margin-top: 2vw;
+}
+
+.analysissum-korean-data {
+    background-color: #FAFAFA;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.analysissum-korean-data h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4C856D;
+    margin-bottom: 10px;
+}
+
+.analysissum-korean-data p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
 }
