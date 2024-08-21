@@ -24,21 +24,21 @@ const PhotoTipPage = () => {
             <div className="phototip-wrong-examples">
                 <div className="phototip-wrong-example">
                     <div className="phototip-image-container">
-                        <img src="./phototip/correct_plant.jpg" alt="Too close" className="phototip-wrong-image" />
+                        <img src="./phototip/too_close.jpg" alt="Too close" className="phototip-wrong-image" />
                         <IoCloseCircle className="phototip-wrong-icon phototip-close-icon" />
                     </div>
                     <p className="phototip-wrong-write" > 너무 가까운 <br></br>거리</p>
                 </div>
                 <div className="phototip-wrong-example">
                     <div className="phototip-image-container">
-                        <img src="./phototip/correct_plant.jpg" alt="Too far" className="phototip-wrong-image" />
+                        <img src="./phototip/too_far.jpg" alt="Too far" className="phototip-wrong-image" />
                         <IoCloseCircle className="phototip-wrong-icon phototip-close-icon" />
                     </div>
                     <p className="phototip-wrong-write">너무 먼 거리</p>
                 </div>
                 <div className="phototip-wrong-example">
                     <div className="phototip-image-container">
-                        <img src="./phototip/correct_plant.jpg" alt="Multiple species" className="phototip-wrong-image" />
+                        <img src="./phototip/too_many.jpg" alt="Multiple species" className="phototip-wrong-image" />
                         <IoCloseCircle className="phototip-wrong-icon phototip-close-icon" />
                     </div>
                     <p className="phototip-wrong-write">다양한 종</p>

@@ -12,6 +12,7 @@ import PhotoTipPage from './pages/Camera/PhotoTipPage';  // PhotoTipPage 추가
 import AnalysisResultPage from './pages/Camera/AnalysisResultPage';  // AnalysisResultPage 추가
 import SavedPlantsPage from './pages/Camera/SavedPlantsPage';  // SavedPlantsPage 추가
 import PreparingPage from './pages/PreparingPage'; // PreparingPage 추가
+import DataCopyrightPage from './pages/DataCopyrightPage'; // DataCopyrightPage 추가
 import Navigation from './components/Navigation';
 
 function App() {
@@ -50,6 +51,7 @@ function AppContent() {
         <Route path="/analysis-result" element={<AnalysisResultPage />} />  {/* AnalysisResultPage 경로 추가 */}
         <Route path="/saved-plants" element={<SavedPlantsPage />} />  {/* SavedPlantsPage 경로 추가 */}
         <Route path="/preparing" element={<PreparingPage />} />  {/* PreparingPage 경로 추가 */}
+        <Route path="/data-copyright" element={<DataCopyrightPage />} />  {/* DataCopyrightPage 경로 추가 */}
       </Routes>
       
       {/* 메인 페이지들에만 네비게이션 표시 */}

@@ -1,0 +1,28 @@
+/* 옵션 버튼 스타일 */
+#settingsoption-container {
+    width: 85%; /* 너비를 약간 줄여서 정렬을 맞춥니다. */
+    padding: 3vw 5vw; /* 좌우 여백을 조정하여 좌우 정렬을 맞춥니다. */
+    background-color: #FFFFFF;
+    border-radius: 10vw;
+    margin-bottom: 4vw;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 아이콘과 텍스트를 왼쪽으로 정렬합니다. */
+}
+
+#settingsoption-icon {
+    font-size: 6vw;
+    color: #4C856D;
+    margin-right: 4vw;
+    line-height: 1; /* 아이콘의 수직 정렬을 맞추기 위해 line-height를 설정 */
+    vertical-align: middle; /* 아이콘이 텍스트의 중간에 위치하도록 설정 */
+}
+
+#settingsoption-title {
+    font-size: 4vw;
+    color: #333;
+    margin-left: 4vw; /* 아이콘과 텍스트 사이의 간격을 맞춥니다. */
+    line-height: 1.5; /* 텍스트의 수직 정렬을 위해 line-height를 조정 */
+}

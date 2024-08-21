@@ -10,8 +10,8 @@ const HeadSection = () => {
   // Dummy data
   const userName = "익명";
   const userLevel = "초보자";
-  const progressTitle = "민서의 식물농장";
-  const progressPercentage = 4;
+  const progressTitle = "익명의 식물농장";
+  const progressPercentage = 0;
 
   return (
     <Header height="50vw"> {/* Adjusted height */}

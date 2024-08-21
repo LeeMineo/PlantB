@@ -1,0 +1,44 @@
+#usersetting-container {
+    display: flex;
+    align-items: center;
+    padding: 4vw;
+    margin-bottom: 4vw;
+    background-color: #ffffff;
+    border-radius: 5vw;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: absolute;
+    top: 20vw;  /* 헤더와의 간격을 조정 */
+    left: 50%;
+    transform: translateX(-50%); /* 가운데 정렬 */
+    z-index: 10;  /* 헤더 위에 배치되도록 */
+    width: 85vw;  /* 너비를 더 넓게 조정 */
+    height: 20vw; /* 높이 추가 조정 */
+}
+
+#usersetting-container:hover {
+    background-color: #f2f2f2;
+}
+
+#usersetting-profile-icon {
+    font-size: 10vw;  /* 아이콘 크기 조정 */
+    color: #4C856D;
+    margin-right: 4vw;
+}
+
+#usersetting-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#usersetting-user-name {
+    font-size: 5vw;
+    font-weight: bold;
+    color: #333;
+}
+
+#usersetting-user-level {
+    font-size: 3.5vw;
+    color: #666;
+}
