@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vw; /* Increase the height significantly */
+    height: 70vw; /* Increase the height significantly */
     margin-bottom: 50vw; /* Add some margin to separate it from the controls */
 }
 
