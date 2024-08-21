@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     height: 100vw; /* Increase the height significantly */
-    margin-bottom: 0vw; /* Add some margin to separate it from the controls */
+    margin-bottom: 40vw; /* Add some margin to separate it from the controls */
 }
 
 /* Ensure video takes full space */
@@ -33,6 +33,7 @@
     padding: 10vw;
     position: absolute;
     bottom: 10vw; /* 화면 하단에 배치 */
+    background-color: #000;
 }
 
 /* 캡처 버튼 스타일 */
