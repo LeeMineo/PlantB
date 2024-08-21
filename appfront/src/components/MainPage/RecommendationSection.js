@@ -31,7 +31,7 @@ const RecommendationSection = () => {
         </div>
         <div 
           className="activity-card" 
-          onClick={() => navigate('/plant-dictionary')} // 희귀식물 클릭 시 식물도감 페이지로 이동
+          onClick={() => navigate('/preparing')} // 희귀식물 클릭 시 식물도감 페이지로 이동
           style={{ cursor: 'pointer' }} // 커서 포인터 추가
         >
           <GiPlantSeed className="activity-icon" />
@@ -39,7 +39,7 @@ const RecommendationSection = () => {
         </div>
         <div 
           className="activity-card" 
-          onClick={() => navigate('/community')} // 커뮤니티 클릭 시 커뮤니티 페이지로 이동 (아직 제작되지 않음)
+          onClick={() => navigate('/preparing')} // 커뮤니티 클릭 시 커뮤니티 페이지로 이동 (아직 제작되지 않음)
           style={{ cursor: 'pointer' }} // 커서 포인터 추가
         >
           <FaUsers className="activity-icon" />

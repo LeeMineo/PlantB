@@ -18,7 +18,7 @@ const HeadSection = () => {
       <div className="headersection-header-content">
         <div className="headersection-user-info">
           <img 
-            src="./dummy/김철수여자.png" 
+            src="./dummy/person.png" 
             alt="프로필 사진" 
             className="headersection-profile-image" 
             onClick={() => navigate('/settings')} 

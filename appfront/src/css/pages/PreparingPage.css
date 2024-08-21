@@ -1,0 +1,28 @@
+.preparing-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4C856D;
+    padding: 10vw;
+    text-align: center;
+}
+
+.preparing-logo-icon {
+    width: 100vw;
+    padding: 15vw;
+    margin-bottom: 10vw;
+}
+
+.preparing-title {
+    margin-top: 30vw;
+    font-size: 9vw;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10vw;
+}
+
+.preparing-message {
+    font-size: 4vw;
+    color: #fff;
+}

@@ -8,17 +8,17 @@ const plants = [
   {
     name: '닭의장풀',
     description: '파란 꽃잎을 가진 닭의장풀.',
-    image: './닭의장풀.png',
+    image: './flower2.png',
   },
   {
     name: '개망초',
     description: '흰 꽃잎과 노란 꽃술을 가진 개망초.',
-    image: './개망초.png',
+    image: './flower1.png',
   },
   {
     name: '천수국',
     description: '노란 꽃잎을 가진 천수국.',
-    image: './천수국.png',
+    image: './flower3.png',
   },
 ];
 

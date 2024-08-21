@@ -7,10 +7,12 @@ const AuthPage = () => {
 
   return (
     <div className="auth-page">
-      <h1>PlantB에 오신 것을 환영합니다</h1>
+      <p className="auth-beta" >Beta Version</p>
+      <div className="auth-logo">
+        <img src="/plantb_logo_white.svg" alt="PlantB Logo" className="auth-logo-icon" />
+      </div>
+      <p className="auth-intro">PlantB에 오신 것을 환영합니다!</p>
       <div className="auth-buttons">
-        <button onClick={() => navigate('/login')}>로그인</button>
-        <button onClick={() => navigate('/signup')}>회원가입</button>
         <button onClick={() => navigate('/main')}>익명으로 시작하기</button>
       </div>
     </div>

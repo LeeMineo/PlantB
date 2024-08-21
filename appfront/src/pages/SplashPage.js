@@ -16,8 +16,7 @@ const SplashPage = () => {
 
   return (
     <div className="splash-container">
-      <img src="/logo.svg" alt="PlantB Logo" className="logo-icon" />
-      <h1 className="title">Plant:<span className="highlight">B</span></h1>
+      <img src="/plantb_logo_white.svg" alt="PlantB Logo" className="logo-icon" />
       <p className="subtitle">산길을 정복하며 식물도감을 채워보세요!</p>
     </div>
   );
