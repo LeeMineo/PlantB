@@ -3,7 +3,7 @@ import '../../../css/pages/CameraPage.css';  // CSS 파일 임포트
 
 const CameraView = ({ onCapture, onSwitchCamera }) => {
     const videoRef = useRef(null);
-    const [facingMode, setFacingMode] = useState('user');
+    const [facingMode, setFacingMode] = useState('environment');
     const streamRef = useRef(null);
 
     useEffect(() => {
@@ -53,7 +53,7 @@ const CameraView = ({ onCapture, onSwitchCamera }) => {
     };
 
     const handleSwitchCamera = () => {
-        setFacingMode(prevMode => (prevMode === 'user' ? 'environment' : 'user'));
+        setFacingMode(prevMode => (prevMode === 'environment' ? 'user' : 'environment'));
     };
 
     return (
