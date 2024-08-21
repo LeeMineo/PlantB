@@ -13,8 +13,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60vw; /* Increase the height significantly */
-    margin-bottom: 50vw; /* Add some margin to separate it from the controls */
+    height: 50vw; /* Increase the height significantly */
+    margin-bottom: 40vw; /* Add some margin to separate it from the controls */
 }
 
 /* Ensure video takes full space */
