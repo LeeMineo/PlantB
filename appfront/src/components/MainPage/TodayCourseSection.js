@@ -7,14 +7,14 @@ const todayCourses = [
     id: 1,
     name: '북한산 둘레길',
     location: '서울, 대한민국',
-    image: 'https://i.namu.wiki/i/WKFzTxc1jzeAj1SUvxKWWl9Eum9zxo3U3Gj2evgX5HFt0kgPU3-mqckZO6j4h0lGqMtxr_a99QmZR_IsjZFc88hPf6DiG9zAZ9yeHPTWESIW7xO_buA-sl1MO5mC9AI3cNvGZxo2nhAJrfCM-8nebw.webp',
+    image: '/back.png',
     description: '서울 도심 속의 아름다운 산책로',
   },
   {
     id: 2,
     name: '설악산 소공원',
     location: '강원도, 대한민국',
-    image: 'https://i.namu.wiki/i/_uG8G4C8Gf0q6J-Ur2tNaAyzec2V-yYQCvrJ3tEPye2VTgiQunfANNAdkdjxFRuJzlTYJtiU-oasDw7206HsJVG5nkk63r3Y5MlJjmymNqwpMTGWqWu3QtYgy_bS0NcFKt3cb4QnftftDC4AhuUbcw.webp',
+    image: '/back.png',
     description: '장엄한 자연 경관이 돋보이는 등산 코스',
   },
 ];

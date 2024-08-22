@@ -1,0 +1,47 @@
+.error-page {
+    display: flex-start; /* 중앙 정렬을 위한 flexbox 설정 */
+    flex-direction: column;
+    justify-content:center; /* 세로 방향 중앙 정렬 */
+    align-items: center; /* 가로 방향 중앙 정렬 */
+    height: 100vh; /* 전체 높이 설정으로 화면 중앙에 배치 */
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.error-page h1 {
+    font-size: 5vw; /* 폰트 크기를 조정하여 적당한 크기로 */
+    color: #333;
+    margin-bottom: 4vw; /* 간격을 조정 */
+    margin-top: 30vw;
+    margin-bottom: 10vw;
+}
+
+.error-page p {
+    font-size: 3.5vw; /* 설명 텍스트 크기를 조금 더 작게 */
+    color: #666;
+    margin-bottom: 30vw; /* 여백을 더 주어 가독성을 높임 */
+}
+
+.retry-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4C856D;
+    color: white;
+    border: none;
+    border-radius: 5vw;
+    padding: 2vw 5vw;
+    font-size: 3.5vw; /* 버튼 텍스트 크기 조정 */
+    cursor: pointer;
+    margin-top: 5vw; /* 버튼과 위 내용 사이 간격 추가 */
+    margin-left: 32vw;
+}
+
+.retry-button:hover {
+    background-color: #45a049;
+}
+
+.retry-icon {
+    margin-right: 2vw; /* 아이콘과 텍스트 사이 간격 조정 */
+    font-size: 5vw; /* 아이콘 크기 조정 */
+}

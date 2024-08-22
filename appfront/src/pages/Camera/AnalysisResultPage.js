@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import AnalysisSummary from '../../components/Camera/Analysis/AnalysisSummary';
 import AnalysisProgress from '../../components/Camera/Analysis/AnalysisProgress';
+import ErrorPage from '../../components/Camera/Analysis/ErrorPage';  // ErrorPage 컴포넌트 import
 import { identifyPlant } from '../../services/identifyPlant';
 
 const AnalysisResultPage = () => {
@@ -23,7 +24,7 @@ const AnalysisResultPage = () => {
                 setPlantData(result.results);
             } catch (error) {
                 console.error('Error analyzing plant:', error);
-                setError(error.message || '식별할 수 없음');
+                setError(error.response?.data?.message || '이미지를 인식할 수 없습니다.');
             } finally {
                 setLoading(false);
             }
@@ -43,7 +44,7 @@ const AnalysisResultPage = () => {
     return (
         <div className="analysis-result-page">
             {error ? (
-                <div className="error-message">{error}</div>
+                <ErrorPage errorMessage={error} />  // ErrorPage 컴포넌트로 에러 메시지 전달
             ) : (
                 <AnalysisSummary plantData={plantData} imageBlob={image} />
             )}
