@@ -1,0 +1,69 @@
+/* PlantDetailPage.css */
+#plantdetail-page {
+    background-color: #f5f5f5;
+    padding: 5vw;
+}
+
+#plantdetail-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4vw;
+}
+
+#plantdetail-back-icon {
+    font-size: 6vw;
+    color: #333;
+    cursor: pointer;
+    margin-right: 4vw;
+}
+
+#plantdetail-name {
+    font-size: 6vw;
+    font-weight: bold;
+    color: #333;
+}
+
+#plantdetail-image {
+    width: 100%;
+    height: auto;
+    max-height: 50vw;
+    object-fit: cover;
+    border-radius: 2vw;
+    margin-bottom: 6vw;
+}
+
+#plantdetail-info {
+    background-color: #fff;
+    padding: 6vw;
+    border-radius: 4vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#plantdetail-info h2 {
+    font-size: 5vw;
+    color: #333;
+    margin-bottom: 2vw;
+}
+
+#plantdetail-description,
+#plantdetail-scientificname,
+#plantdetail-classification {
+    font-size: 4vw;
+    color: #666;
+    margin-bottom: 4vw;
+}
+
+#plantdetail-other-info-title {
+    margin-top: 6vw;
+}
+
+#plantdetail-info p {
+    font-size: 4vw;
+    color: #555;
+    margin: 2vw 0;
+}
+
+#plantdetail-info p strong {
+    font-weight: bold;
+    color: #333;
+}

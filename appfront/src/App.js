@@ -7,12 +7,13 @@ import HikingPage from './pages/HikingPage';
 import DictionaryPage from './pages/DictionaryPage';
 import SettingsPage from './pages/SettingsPage';
 import CourseDetailPage from './pages/CourseDetailPage';
-import CameraPage from './pages/Camera/CameraPage';  // CameraPage 추가
-import PhotoTipPage from './pages/Camera/PhotoTipPage';  // PhotoTipPage 추가
-import AnalysisResultPage from './pages/Camera/AnalysisResultPage';  // AnalysisResultPage 추가
-import SavedPlantsPage from './pages/Camera/SavedPlantsPage';  // SavedPlantsPage 추가
-import PreparingPage from './pages/PreparingPage'; // PreparingPage 추가
-import DataCopyrightPage from './pages/DataCopyrightPage'; // DataCopyrightPage 추가
+import CameraPage from './pages/Camera/CameraPage';
+import PhotoTipPage from './pages/Camera/PhotoTipPage';
+import AnalysisResultPage from './pages/Camera/AnalysisResultPage';
+import SavedPlantsPage from './pages/Camera/SavedPlantsPage';
+import PreparingPage from './pages/PreparingPage';
+import DataCopyrightPage from './pages/DataCopyrightPage';
+import PlantDetailPage from './pages/PlantDetailPage';  // PlantDetailPage 추가
 import Navigation from './components/Navigation';
 
 function App() {
@@ -43,15 +44,18 @@ function AppContent() {
         <Route path="/hiking" element={<HikingPage />} />
         <Route path="/plant-dictionary" element={<DictionaryPage />} />
         <Route path="/settings" element={<SettingsPage />} />
-        <Route path="/course/:courseId" element={<CourseDetailPage />} /> {/* ID 기반 코스 상세 페이지 */}
+        <Route path="/course/:courseId" element={<CourseDetailPage />} />
         
         {/* 추가된 페이지들 */}
-        <Route path="/camera" element={<CameraPage />} />  {/* CameraPage 경로 추가 */}
-        <Route path="/photo-tip" element={<PhotoTipPage />} />  {/* PhotoTipPage 경로 추가 */}
-        <Route path="/analysis-result" element={<AnalysisResultPage />} />  {/* AnalysisResultPage 경로 추가 */}
-        <Route path="/saved-plants" element={<SavedPlantsPage />} />  {/* SavedPlantsPage 경로 추가 */}
-        <Route path="/preparing" element={<PreparingPage />} />  {/* PreparingPage 경로 추가 */}
-        <Route path="/data-copyright" element={<DataCopyrightPage />} />  {/* DataCopyrightPage 경로 추가 */}
+        <Route path="/camera" element={<CameraPage />} />
+        <Route path="/photo-tip" element={<PhotoTipPage />} />
+        <Route path="/analysis-result" element={<AnalysisResultPage />} />
+        <Route path="/saved-plants" element={<SavedPlantsPage />} />
+        <Route path="/preparing" element={<PreparingPage />} />
+        <Route path="/data-copyright" element={<DataCopyrightPage />} />
+        
+        {/* 식물 상세 페이지 */}
+        <Route path="/plant/:plantId" element={<PlantDetailPage />} />  {/* 식물 ID 기반 상세 페이지 경로 추가 */}
       </Routes>
       
       {/* 메인 페이지들에만 네비게이션 표시 */}

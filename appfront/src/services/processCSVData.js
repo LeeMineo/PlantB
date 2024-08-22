@@ -15,7 +15,7 @@ export const processCSVData = async () => {
             id: row['분류군ID'] || 'No ID available',
             name: row['국명'] || 'No Korean name available',
             scientificName: row['학명'] || 'No scientific name available',
-            description: row['설명'] ? row['설명'].split('.').slice(-2).join('.').trim() + '.' : 'No description available', // 마지막 두 문장만 표시
+            description: row['설명'] || 'No description available', 
             classification: row['분류계급'] || 'No classification available',
             synonymStatus: row['이명여부'] || 'No synonym status available',
             author: row['명명자'] || 'No author available',
