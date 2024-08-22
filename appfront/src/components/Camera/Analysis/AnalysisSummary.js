@@ -4,7 +4,7 @@ import { matchPlantWithCSV } from '../../../services/plantMatch';
 import Header from '../../Header';
 import AnalysisProgress from './AnalysisProgress';
 
-const AnalysisSummary = ({ plantData, imageBlob }) => {
+const AnalysisSummary = ({ plantData, imageBlob, locationData }) => {  // locationData prop 추가
     const [koreanData, setKoreanData] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -36,6 +36,11 @@ const AnalysisSummary = ({ plantData, imageBlob }) => {
         fetchKoreanData();
     }, [plantData]);
 
+    const handleViewMoreClick = () => {
+        // 모든 데이터를 볼 수 있는 상세 페이지로 이동하는 로직을 추가하세요
+        alert("모든 데이터를 볼 수 있는 페이지로 이동합니다.");
+    };
+
     if (loading) {
         return (
             <div id="analysissum-loading">
@@ -54,7 +59,6 @@ const AnalysisSummary = ({ plantData, imageBlob }) => {
 
     const topResult = plantData.sort((a, b) => b.score - a.score)[0];
 
-    // 설명에서 마지막 문장만 추출
     const lastSentence = koreanData?.설명
         ? koreanData.설명.split('.').filter(sentence => sentence.trim().length > 0).slice(-1)[0] + '.'
         : '설명이 없습니다.';
@@ -97,6 +101,21 @@ const AnalysisSummary = ({ plantData, imageBlob }) => {
                         <p>No matching data found in the CSV.</p>
                     )}
                 </div>
+
+                {/* 촬영 위치 데이터 */}
+                <div className="analysissum-location-info">
+                    <h4>촬영한 위치</h4>
+                    <p>{locationData?.address || '위치 정보가 없습니다.'}</p>
+                    <p>{new Date().toLocaleString()}</p>
+                </div>
+
+                {/* 모든 데이터 보기 버튼 */}
+                <div className="analysissum-view-more">
+                    <button className="view-more-button" onClick={handleViewMoreClick}>
+                        자세한 정보 보기
+                    </button>
+                </div>
+
             </div>
         </>
     );
