@@ -4,28 +4,36 @@ import DictionaryTabs from '../components/DictionaryPage/DictionaryTabs';
 import AllPlantsList from '../components/DictionaryPage/AllPlants/AllPlantsList';
 import MyCollection from '../components/DictionaryPage/MyCollection/MyCollection';
 import MyGalleryList from '../components/DictionaryPage/MyGallery/MyGalleryList';
-import allPlants from '../data/plantData'; // 모든 식물 데이터 import
+import { processCSVData } from '../services/processCSVData'; // CSV 데이터를 가져오는 함수 import
 import '../css/pages/DictionaryPage.css';
 
 const DictionaryPage = () => {
   const [activeTab, setActiveTab] = useState('전체');
-  const [filteredPlants, setFilteredPlants] = useState(allPlants);
+  const [allPlants, setAllPlants] = useState([]); // 전체 식물 데이터를 담는 상태
+  const [filteredPlants, setFilteredPlants] = useState([]);
 
   useEffect(() => {
-    // 식물 데이터를 이름순으로 정렬
-    const sortedPlants = [...allPlants].sort((a, b) => a.name.localeCompare(b.name));
-    setFilteredPlants(sortedPlants);
+    const fetchData = async () => {
+      try {
+        const data = await processCSVData(); // CSV 데이터 로드
+        setAllPlants(data);
+        setFilteredPlants(data); // 초기 상태는 전체 데이터를 표시
+      } catch (error) {
+        console.error("Failed to load plant data:", error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   const handleSearch = (searchTerm) => {
     if (searchTerm) {
       const results = allPlants.filter(plant => 
-        plant.name.includes(searchTerm)
+        plant.name.includes(searchTerm) || plant.scientificName.includes(searchTerm)
       );
       setFilteredPlants(results);
     } else {
-      // 검색어가 없으면 전체 목록을 이름순으로 정렬하여 표시
-      setFilteredPlants([...allPlants].sort((a, b) => a.name.localeCompare(b.name)));
+      setFilteredPlants(allPlants); // 검색어가 없으면 전체 목록 표시
     }
   };
 

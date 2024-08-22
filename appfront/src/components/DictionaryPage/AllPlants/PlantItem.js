@@ -5,7 +5,7 @@ import './styles/PlantItem.css';
 const PlantItem = ({ plant }) => {
   return (
     <div className="plant-item">
-      <img src={`${plant.image}`} alt={plant.name} className="plant-item-image" />
+      <img src={plant.image} alt={plant.name} className="plant-item-image" />
       <div className="plant-item-content">
         <div className="plant-item-header">
           <h3 className="plant-item-title">{plant.name}</h3>

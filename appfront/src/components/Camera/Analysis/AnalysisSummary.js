@@ -57,7 +57,6 @@ const AnalysisSummary = ({ plantData, imageBlob, locationData }) => {  // locati
         return <div id="analysissum-no-data">No data available for the given plant.</div>;
     }
 
-    const topResult = plantData.sort((a, b) => b.score - a.score)[0];
 
     const lastSentence = koreanData?.설명
         ? koreanData.설명.split('.').filter(sentence => sentence.trim().length > 0).slice(-1)[0] + '.'
