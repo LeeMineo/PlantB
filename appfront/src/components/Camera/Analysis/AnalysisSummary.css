@@ -1,81 +1,48 @@
 #analysissum-summary {
-
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
+    padding: 5vw;
 }
 
-#analysissum-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
+.analysissum-image-container {
+    text-align: center;
+    margin-bottom: 4vw;
 }
 
-.analysissum-plant-item {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.analysissum-plant-info {
-    margin-bottom: 20px;
-}
-
-.analysissum-species {
-    font-size: 18px;
-    font-weight: bold;
-    color: #4C856D;
-    margin-bottom: 5px;
-}
-
-.analysissum-scientific-name,
-.analysissum-family,
-.analysissum-score {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.analysissum-images-container {
-    margin-bottom: 20px;
-}
-
-.analysissum-images-title {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.analysissum-image {
+.analysissum-main-image {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    max-height: 50%;
+    object-fit: cover;
+    border-radius: 2vw;
+
 }
 
-.analysissum-no-images {
-    font-size: 14px;
-    color: #999;
+.analysissum-basic-info {
+    background-color: #fff;
+    padding: 3.2vw;
+    border-radius: 2vw;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.1);
+    margin-bottom: 4vw;
+}
+
+.analysissum-common-name {
+    font-size: 4.8vw;
+    margin-bottom: 1.6vw;
+}
+
+.analysissum-description {
+    font-size: 4vw;
+    color: #666;
 }
 
 .analysissum-korean-data {
-    background-color: #FAFAFA;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 3.2vw;
+    border-radius: 2vw;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.1);
 }
 
-.analysissum-korean-data h4 {
-    font-size: 16px;
-    font-weight: bold;
-    color: #4C856D;
-    margin-bottom: 10px;
-}
-
-.analysissum-korean-data p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
+.korean-data-box p {
+    font-size: 4vw;
+    color: #333;
+    margin: 0.8vw 0;
 }
